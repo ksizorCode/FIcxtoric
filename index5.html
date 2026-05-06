@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICX Histórico - ¡Diversión!</title>
+    <link rel="stylesheet" href="css/styles5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <div class="app-container-infantil">
+        <!-- Top Navigation (New Structure) -->
+        <nav class="top-nav-bubbly">
+            <div class="logo-infantil">
+                <span class="emoji">🎬</span>
+                <span class="text">FICX<span class="small">torico</span></span>
+            </div>
+            <ul class="nav-links">
+                <li data-view="ediciones" class="active"><i class="fas fa-history"></i><span>Ediciones</span></li>
+                <li data-view="peliculas"><i class="fas fa-film"></i><span>Pelis</span></li>
+                <li data-view="cineastas"><i class="fas fa-user-astronaut"></i><span>Directores</span></li>
+                <li data-view="favoritos"><i class="fas fa-heart"></i><span>Mis Favoritos</span></li>
+            </ul>
+            <div class="more-options">
+                <li data-view="sedes"><i class="fas fa-map-marker-alt"></i></li>
+                <li data-view="galardones"><i class="fas fa-trophy"></i></li>
+                <li data-view="contacto"><i class="fas fa-envelope"></i></li>
+                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="search-bar-infantil">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="global-search" placeholder="¡Busca tu peli favorita!">
+                </div>
+                <div class="view-controls">
+                    <button class="view-btn active" data-mode="grid"><i class="fas fa-th"></i></button>
+                    <button class="view-btn" data-mode="gallery"><i class="fas fa-th-list"></i></button>
+                </div>
+            </header>
+
+            <div id="content-display" class="content-display">
+                <div class="loader"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for Details -->
+    <div id="detail-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

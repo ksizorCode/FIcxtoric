@@ -1,0 +1,203 @@
+
+:root {
+    --bg: #FFF9E6; /* Cream yellow */
+    --nav-bg: #FFD93D; /* Bright sunny yellow */
+    --accent: #FF6B6B; /* Soft red/pink */
+    --secondary: #6BCB77; /* Fresh green */
+    --tertiary: #4D96FF; /* Sky blue */
+    --text: #4E3131;
+    --radius: 30px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+}
+
+.app-container-infantil {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* --- TOP NAV BUBBLY --- */
+.top-nav-bubbly {
+    height: 100px;
+    background: var(--nav-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    border-bottom: 8px solid #F6BA42;
+    box-shadow: 0 8px 0 rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+.logo-infantil {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.8rem;
+    color: var(--accent);
+}
+
+.logo-infantil .small { font-size: 1rem; color: var(--text); }
+
+.top-nav-bubbly .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.top-nav-bubbly .nav-links li {
+    background: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 0 #ddd;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.top-nav-bubbly .nav-links li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 0 #ddd;
+}
+
+.top-nav-bubbly .nav-links li.active {
+    background: var(--accent);
+    color: white;
+    box-shadow: 0 4px 0 #D14D4D;
+}
+
+.more-options {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.more-options li {
+    list-style: none;
+    width: 44px;
+    height: 44px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #ddd;
+}
+
+/* --- MAIN CONTENT --- */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+.search-bar-infantil {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.search-bar-infantil .search-container {
+    flex: 1;
+    background: white;
+    border: 4px solid var(--nav-bg);
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-infantil input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: inherit;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.content-display {
+    flex: 1;
+    background: white;
+    border-radius: 40px;
+    padding: 2rem;
+    overflow-y: auto;
+    border: 8px solid #F0F0F0;
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* --- CARDS (GUMMY STYLE) --- */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.movie-card {
+    background: white;
+    border-radius: 40px;
+    padding: 10px;
+    border: 5px solid #F0F0F0;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: scale(1.05) rotate(2deg);
+    border-color: var(--tertiary);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.movie-info { padding: 1rem; text-align: center; }
+.movie-info h3 { font-family: 'Fredoka One'; color: var(--accent); }
+
+/* --- MODAL (CLOUD) --- */
+.modal-content {
+    background: white;
+    border-radius: 50px;
+    border: 10px solid var(--tertiary);
+    animation: bounceIn 0.5s forwards;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Fix for app.js */
+.modal[style*="display: block"] {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 107, 107, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 2rem;
+    color: var(--accent);
+}
