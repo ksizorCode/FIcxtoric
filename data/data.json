@@ -1,0 +1,2727 @@
+{
+  "festival": {
+    "nombre": "Festival Internacional de Cine de Gijón (FICX)",
+    "descripcion": "Festival de cine con más de 60 años de historia, centrado en el cine independiente y de autor.",
+    "fundacion": 1963
+  },
+  "ediciones": [
+    {
+      "id": "e63",
+      "numero": 63,
+      "año": 2025,
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "director": "Alejandro Díaz Castaño",
+      "web": "https://63.ficx.es",
+      "programa": "https://ficx.es/programa-63.pdf",
+      "fecha_inicio": "2025-11-15",
+      "fecha_fin": "2025-11-23",
+      "resumen_anual": "Regreso masivo del público y enfoque especial en el cine asiático.",
+      "secciones": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "estadisticas": {
+        "peliculas": 160,
+        "cineastas": 90,
+        "sedes": 15,
+        "asistentes": 70000
+      }
+    },
+    {
+      "id": "e62",
+      "numero": 62,
+      "año": 2024,
+      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "director": "Alejandro Díaz Castaño",
+      "web": "https://62.ficx.es",
+      "programa": "https://ficx.es/programa-62.pdf",
+      "fecha_inicio": "2024-11-14",
+      "fecha_fin": "2024-11-22",
+      "resumen_anual": "Récord de películas presentadas a concurso.",
+      "secciones": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "estadisticas": {
+        "peliculas": 155,
+        "cineastas": 85,
+        "sedes": 14,
+        "asistentes": 68000
+      }
+    },
+    {
+      "id": "e61",
+      "numero": 61,
+      "año": 2023,
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "director": "Alejandro Díaz Castaño",
+      "web": "https://61.ficx.es",
+      "programa": "https://ficx.es/programa-61.pdf",
+      "fecha_inicio": "2023-11-17",
+      "fecha_fin": "2023-11-25",
+      "resumen_anual": "Consolidación de nuevas secciones.",
+      "secciones": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "estadisticas": {
+        "peliculas": 150,
+        "cineastas": 80,
+        "sedes": 12,
+        "asistentes": 65000
+      }
+    },
+    {
+      "id": "e60",
+      "numero": 60,
+      "año": 2022,
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "director": "Alejandro Díaz Castaño",
+      "web": "https://60.ficx.es",
+      "programa": "https://ficx.es/programa-60.pdf",
+      "fecha_inicio": "2022-11-11",
+      "fecha_fin": "2022-11-19",
+      "resumen_anual": "Aniversario de diamante (60 años).",
+      "secciones": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "estadisticas": {
+        "peliculas": 145,
+        "cineastas": 75,
+        "sedes": 10,
+        "asistentes": 60000
+      }
+    },
+    {
+      "id": "e59",
+      "numero": 59,
+      "año": 2021,
+      "cartel": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop",
+      "director": "Alejandro Díaz Castaño",
+      "web": "https://59.ficx.es",
+      "programa": "https://ficx.es/programa-59.pdf",
+      "fecha_inicio": "2021-11-19",
+      "fecha_fin": "2021-11-27",
+      "resumen_anual": "Regreso a la presencialidad controlada.",
+      "secciones": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "estadisticas": {
+        "peliculas": 130,
+        "cineastas": 70,
+        "sedes": 8,
+        "asistentes": 55000
+      }
+    },
+    {
+      "id": "e58",
+      "numero": 58,
+      "año": 2020,
+      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "director": "Alejandro Díaz Castaño",
+      "web": "https://58.ficx.es",
+      "programa": "https://ficx.es/programa-58.pdf",
+      "fecha_inicio": "2020-11-20",
+      "fecha_fin": "2020-11-28",
+      "resumen_anual": "Edición ONLINE histórica debido a la pandemia mundial.",
+      "secciones": [
+        "s1",
+        "s2"
+      ],
+      "estadisticas": {
+        "peliculas": 120,
+        "cineastas": 60,
+        "sedes": 6,
+        "asistentes": 45000
+      }
+    },
+    {
+      "id": "e57",
+      "numero": 57,
+      "año": 2019,
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "director": "Alejandro Díaz Castaño",
+      "web": "https://57.ficx.es",
+      "programa": "https://ficx.es/programa-57.pdf",
+      "fecha_inicio": "2019-11-15",
+      "fecha_fin": "2019-11-23",
+      "resumen_anual": "Consolidación de Tierres en Trance.",
+      "secciones": [
+        "s1",
+        "s2"
+      ],
+      "estadisticas": {
+        "peliculas": 140,
+        "cineastas": 72,
+        "sedes": 8,
+        "asistentes": 62000
+      }
+    },
+    {
+      "id": "e56",
+      "numero": 56,
+      "año": 2018,
+      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "director": "Alejandro Díaz Castaño",
+      "web": "https://56.ficx.es",
+      "programa": "https://ficx.es/programa-56.pdf",
+      "fecha_inicio": "2018-11-16",
+      "fecha_fin": "2018-11-24",
+      "resumen_anual": "Apuesta por el cine de autor más radical.",
+      "secciones": [
+        "s1",
+        "s2"
+      ],
+      "estadisticas": {
+        "peliculas": 138,
+        "cineastas": 70,
+        "sedes": 8,
+        "asistentes": 61000
+      }
+    },
+    {
+      "id": "e55",
+      "numero": 55,
+      "año": 2017,
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "director": "Alejandro Díaz Castaño",
+      "web": "https://55.ficx.es",
+      "programa": "https://ficx.es/programa-55.pdf",
+      "fecha_inicio": "2017-11-17",
+      "fecha_fin": "2017-11-25",
+      "resumen_anual": "Primer año de Alejandro Díaz Castaño como director.",
+      "secciones": [
+        "s1",
+        "s2"
+      ],
+      "estadisticas": {
+        "peliculas": 142,
+        "cineastas": 75,
+        "sedes": 9,
+        "asistentes": 63000
+      }
+    },
+    {
+      "id": "e54",
+      "numero": 54,
+      "año": 2016,
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "director": "Ignacio Carballo",
+      "web": "https://54.ficx.es",
+      "programa": "https://ficx.es/programa-54.pdf",
+      "fecha_inicio": "2016-11-19",
+      "fecha_fin": "2016-11-27",
+      "resumen_anual": "Enfoque en la educación cinematográfica.",
+      "secciones": [
+        "s1",
+        "s5"
+      ],
+      "estadisticas": {
+        "peliculas": 135,
+        "cineastas": 68,
+        "sedes": 7,
+        "asistentes": 58000
+      }
+    },
+    {
+      "id": "e53",
+      "numero": 53,
+      "año": 2015,
+      "cartel": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop",
+      "director": "Ignacio Carballo",
+      "web": "https://53.ficx.es",
+      "programa": "https://ficx.es/programa-53.pdf",
+      "fecha_inicio": "2015-11-20",
+      "fecha_fin": "2015-11-28",
+      "resumen_anual": "Gran presencia de cine independiente USA.",
+      "secciones": [
+        "s1",
+        "s5"
+      ],
+      "estadisticas": {
+        "peliculas": 130,
+        "cineastas": 65,
+        "sedes": 7,
+        "asistentes": 56000
+      }
+    },
+    {
+      "id": "e52",
+      "numero": 52,
+      "año": 2014,
+      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "director": "Ignacio Carballo",
+      "web": "https://52.ficx.es",
+      "programa": "https://ficx.es/programa-52.pdf",
+      "fecha_inicio": "2014-11-21",
+      "fecha_fin": "2014-11-29",
+      "resumen_anual": "Apertura a nuevos mercados asiáticos.",
+      "secciones": [
+        "s1",
+        "s5"
+      ],
+      "estadisticas": {
+        "peliculas": 128,
+        "cineastas": 64,
+        "sedes": 6,
+        "asistentes": 54000
+      }
+    },
+    {
+      "id": "e51",
+      "numero": 51,
+      "año": 2013,
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "director": "Ignacio Carballo",
+      "web": "https://51.ficx.es",
+      "programa": "https://ficx.es/programa-51.pdf",
+      "fecha_inicio": "2013-11-15",
+      "fecha_fin": "2013-11-23",
+      "resumen_anual": "Consolidación de la etapa Carballo.",
+      "secciones": [
+        "s1",
+        "s5"
+      ],
+      "estadisticas": {
+        "peliculas": 125,
+        "cineastas": 62,
+        "sedes": 6,
+        "asistentes": 52000
+      }
+    },
+    {
+      "id": "e50",
+      "numero": 50,
+      "año": 2012,
+      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "director": "Ignacio Carballo",
+      "web": "https://50.ficx.es",
+      "programa": "https://ficx.es/programa-50.pdf",
+      "fecha_inicio": "2012-11-16",
+      "fecha_fin": "2012-11-24",
+      "resumen_anual": "Bodas de oro del festival (50 años).",
+      "secciones": [
+        "s1",
+        "s2"
+      ],
+      "estadisticas": {
+        "peliculas": 120,
+        "cineastas": 60,
+        "sedes": 6,
+        "asistentes": 50000
+      }
+    },
+    {
+      "id": "e49",
+      "numero": 49,
+      "año": 2011,
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "director": "José Luis Cienfuegos",
+      "web": "https://49.ficx.es",
+      "programa": "https://ficx.es/programa-49.pdf",
+      "fecha_inicio": "2011-11-18",
+      "fecha_fin": "2011-11-26",
+      "resumen_anual": "Último año de José Luis Cienfuegos.",
+      "secciones": [
+        "s1",
+        "s2"
+      ],
+      "estadisticas": {
+        "peliculas": 118,
+        "cineastas": 58,
+        "sedes": 5,
+        "asistentes": 48000
+      }
+    },
+    {
+      "id": "e48",
+      "numero": 48,
+      "año": 2010,
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "director": "José Luis Cienfuegos",
+      "web": "https://48.ficx.es",
+      "programa": "https://ficx.es/programa-48.pdf",
+      "fecha_inicio": "2010-11-19",
+      "fecha_fin": "2010-11-27",
+      "resumen_anual": "Fuerte apuesta por el cine independiente español.",
+      "secciones": [
+        "s1",
+        "s2"
+      ],
+      "estadisticas": {
+        "peliculas": 115,
+        "cineastas": 55,
+        "sedes": 5,
+        "asistentes": 47000
+      }
+    },
+    {
+      "id": "e47",
+      "numero": 47,
+      "año": 2009,
+      "cartel": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop",
+      "director": "José Luis Cienfuegos",
+      "web": "https://47.ficx.es",
+      "programa": "https://ficx.es/programa-47.pdf",
+      "fecha_inicio": "2009-11-20",
+      "fecha_fin": "2009-11-28",
+      "resumen_anual": "Homenaje a grandes directores europeos.",
+      "secciones": [
+        "s1",
+        "s2"
+      ],
+      "estadisticas": {
+        "peliculas": 112,
+        "cineastas": 54,
+        "sedes": 5,
+        "asistentes": 46000
+      }
+    },
+    {
+      "id": "e46",
+      "numero": 46,
+      "año": 2008,
+      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "director": "José Luis Cienfuegos",
+      "web": "https://46.ficx.es",
+      "programa": "https://ficx.es/programa-46.pdf",
+      "fecha_inicio": "2008-11-21",
+      "fecha_fin": "2008-11-29",
+      "resumen_anual": "Éxito de público en las proyecciones nocturnas.",
+      "secciones": [
+        "s1",
+        "s3"
+      ],
+      "estadisticas": {
+        "peliculas": 110,
+        "cineastas": 52,
+        "sedes": 5,
+        "asistentes": 45000
+      }
+    },
+    {
+      "id": "e45",
+      "numero": 45,
+      "año": 2007,
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "director": "José Luis Cienfuegos",
+      "web": "https://45.ficx.es",
+      "programa": "https://ficx.es/programa-45.pdf",
+      "fecha_inicio": "2007-11-22",
+      "fecha_fin": "2007-11-30",
+      "resumen_anual": "Consolidación del festival como referente Indie.",
+      "secciones": [
+        "s1",
+        "s3"
+      ],
+      "estadisticas": {
+        "peliculas": 108,
+        "cineastas": 50,
+        "sedes": 4,
+        "asistentes": 44000
+      }
+    },
+    {
+      "id": "e44",
+      "numero": 44,
+      "año": 2006,
+      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "director": "José Luis Cienfuegos",
+      "web": "https://44.ficx.es",
+      "programa": "https://ficx.es/programa-44.pdf",
+      "fecha_inicio": "2006-11-23",
+      "fecha_fin": "2006-12-01",
+      "resumen_anual": "Premios a nuevos talentos internacionales.",
+      "secciones": [
+        "s1",
+        "s3"
+      ],
+      "estadisticas": {
+        "peliculas": 105,
+        "cineastas": 48,
+        "sedes": 4,
+        "asistentes": 43000
+      }
+    },
+    {
+      "id": "e43",
+      "numero": 43,
+      "año": 2005,
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "director": "José Luis Cienfuegos",
+      "web": "https://43.ficx.es",
+      "programa": "https://ficx.es/programa-43.pdf",
+      "fecha_inicio": "2005-11-24",
+      "fecha_fin": "2005-12-02",
+      "resumen_anual": "Apuesta por el cine de los Balcanes.",
+      "secciones": [
+        "s1",
+        "s2"
+      ],
+      "estadisticas": {
+        "peliculas": 102,
+        "cineastas": 46,
+        "sedes": 4,
+        "asistentes": 42000
+      }
+    },
+    {
+      "id": "e42",
+      "numero": 42,
+      "año": 2004,
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "director": "José Luis Cienfuegos",
+      "web": "https://42.ficx.es",
+      "programa": "https://ficx.es/programa-42.pdf",
+      "fecha_inicio": "2004-11-25",
+      "fecha_fin": "2004-12-03",
+      "resumen_anual": "Homenaje al cine clásico revisitado.",
+      "secciones": [
+        "s1",
+        "s2"
+      ],
+      "estadisticas": {
+        "peliculas": 100,
+        "cineastas": 45,
+        "sedes": 4,
+        "asistentes": 41000
+      }
+    }
+  ],
+  "peliculas": [
+    {
+      "id": "p1",
+      "edicion_id": "e61",
+      "titulo": "El eco de las montañas",
+      "seccion": "Retueyos",
+      "pais": "España",
+      "iso_pais": "ES",
+      "director": "Elena Martín",
+      "duracion": "105 min",
+      "sinopsis": "Un viaje sensorial a través de los valles del norte.",
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Mejor Película"
+      ],
+      "reparto": [
+        "Laia Costa"
+      ]
+    },
+    {
+      "id": "p2",
+      "edicion_id": "e61",
+      "titulo": "Luces de Neón",
+      "seccion": "Albar",
+      "pais": "Francia",
+      "iso_pais": "FR",
+      "director": "Jean-Pierre",
+      "duracion": "90 min",
+      "sinopsis": "Historia de amor en París.",
+      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Netflix"
+      ],
+      "galardones": [
+        "Premio del Público"
+      ],
+      "reparto": [
+        "Léa Seydoux"
+      ]
+    },
+    {
+      "id": "p3",
+      "edicion_id": "e60",
+      "titulo": "Pacifiction",
+      "seccion": "Albar",
+      "pais": "España",
+      "iso_pais": "ES",
+      "director": "Albert Serra",
+      "duracion": "165 min",
+      "sinopsis": "En la isla de Tahití, en la Polinesia Francesa.",
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Mejor Dirección"
+      ],
+      "reparto": [
+        "Benoît Magimel"
+      ]
+    },
+    {
+      "id": "p4",
+      "edicion_id": "e58",
+      "titulo": "First Cow",
+      "seccion": "Retueyos",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "Kelly Reichardt",
+      "duracion": "121 min",
+      "sinopsis": "Un cocinero viaja a Oregon y se une a un inmigrante chino.",
+      "cartel": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "MUBI"
+      ],
+      "galardones": [
+        "Mejor Guion"
+      ],
+      "reparto": [
+        "John Magaro"
+      ]
+    },
+    {
+      "id": "p5",
+      "edicion_id": "e63",
+      "titulo": "La sociedad de la nieve",
+      "seccion": "Albar",
+      "pais": "España",
+      "iso_pais": "ES",
+      "director": "J.A. Bayona",
+      "duracion": "144 min",
+      "sinopsis": "El vuelo 571 de la Fuerza Aérea Uruguaya en los Andes.",
+      "cartel": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Netflix"
+      ],
+      "galardones": [
+        "Mejor Película"
+      ],
+      "reparto": [
+        "Enzo Vogrincic"
+      ]
+    },
+    {
+      "id": "p11",
+      "edicion_id": "e61",
+      "titulo": "De Facto",
+      "seccion": "Albar",
+      "pais": "Austria",
+      "iso_pais": "AT",
+      "director": "Selma Doborac",
+      "duracion": "130 min",
+      "sinopsis": "Una reflexión sobre la violencia y la responsabilidad humana.",
+      "cartel": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "MUBI"
+      ],
+      "galardones": [
+        "Mejor Dirección"
+      ],
+      "reparto": []
+    },
+    {
+      "id": "p12",
+      "edicion_id": "e62",
+      "titulo": "Anatomía de una caída",
+      "seccion": "Albar",
+      "pais": "Francia",
+      "iso_pais": "FR",
+      "director": "Justine Triet",
+      "duracion": "151 min",
+      "sinopsis": "Una mujer es sospechosa del asesinato de su marido.",
+      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Mejor Actriz"
+      ],
+      "reparto": [
+        "Sandra Hüller"
+      ]
+    },
+    {
+      "id": "p13",
+      "edicion_id": "e62",
+      "titulo": "Fallen Leaves",
+      "seccion": "Retueyos",
+      "pais": "Finlandia",
+      "iso_pais": "FI",
+      "director": "Aki Kaurismäki",
+      "duracion": "81 min",
+      "sinopsis": "Dos personas solitarias se encuentran en la noche de Helsinki.",
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "MUBI"
+      ],
+      "galardones": [
+        "Gran Premio del Jurado"
+      ],
+      "reparto": [
+        "Alma Pöysti"
+      ]
+    },
+    {
+      "id": "p14",
+      "edicion_id": "e61",
+      "titulo": "Samsara",
+      "seccion": "Esbilla",
+      "pais": "España",
+      "iso_pais": "ES",
+      "director": "Lois Patiño",
+      "duracion": "113 min",
+      "sinopsis": "En los templos budistas de Luang Prabang.",
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Premio Especial"
+      ],
+      "reparto": []
+    },
+    {
+      "id": "p15",
+      "edicion_id": "e60",
+      "titulo": "Alcarràs",
+      "seccion": "Albar",
+      "pais": "España",
+      "iso_pais": "ES",
+      "director": "Carla Simón",
+      "duracion": "120 min",
+      "sinopsis": "La familia Solé lucha por sus tierras en Lérida.",
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "MUBI"
+      ],
+      "galardones": [
+        "Mejor Película"
+      ],
+      "reparto": [
+        "Jordi Pujol Dolcet"
+      ]
+    },
+    {
+      "id": "p16",
+      "edicion_id": "e63",
+      "titulo": "Robot Dreams",
+      "seccion": "Enfants Terribles",
+      "pais": "España",
+      "iso_pais": "ES",
+      "director": "Pablo Berger",
+      "duracion": "102 min",
+      "sinopsis": "Las aventuras de un perro y su robot en Nueva York.",
+      "cartel": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Movistar+"
+      ],
+      "galardones": [
+        "Mejor Película Animación"
+      ],
+      "reparto": []
+    },
+    {
+      "id": "p17",
+      "edicion_id": "e62",
+      "titulo": "Cerrar los ojos",
+      "seccion": "Esbilla",
+      "pais": "España",
+      "iso_pais": "ES",
+      "director": "Víctor Erice",
+      "duracion": "169 min",
+      "sinopsis": "Un célebre actor español desaparece durante el rodaje.",
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Movistar+"
+      ],
+      "galardones": [
+        "Premio Honorífico"
+      ],
+      "reparto": [
+        "Manolo Solo"
+      ]
+    },
+    {
+      "id": "p18",
+      "edicion_id": "e61",
+      "titulo": "How to Have Sex",
+      "seccion": "Retueyos",
+      "pais": "Reino Unido",
+      "iso_pais": "GB",
+      "director": "Molly Manning Walker",
+      "duracion": "98 min",
+      "sinopsis": "Tres adolescentes británicas se van de vacaciones.",
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "MUBI"
+      ],
+      "galardones": [
+        "Mejor Dirección"
+      ],
+      "reparto": [
+        "Mia McKenna-Bruce"
+      ]
+    },
+    {
+      "id": "p19",
+      "edicion_id": "e60",
+      "titulo": "As Bestas",
+      "seccion": "Esbilla",
+      "pais": "España",
+      "iso_pais": "ES",
+      "director": "Rodrigo Sorogoyen",
+      "duracion": "137 min",
+      "sinopsis": "Una pareja francesa se instala en una aldea gallega.",
+      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Netflix"
+      ],
+      "galardones": [
+        "Mejor Actor"
+      ],
+      "reparto": [
+        "Denis Ménochet"
+      ]
+    },
+    {
+      "id": "p20",
+      "edicion_id": "e58",
+      "titulo": "Nomadland",
+      "seccion": "Albar",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "Chloé Zhao",
+      "duracion": "108 min",
+      "sinopsis": "Una mujer abandona su pueblo para recorrer el oeste.",
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Disney+"
+      ],
+      "galardones": [
+        "Mejor Dirección"
+      ],
+      "reparto": [
+        "Frances McDormand"
+      ]
+    },
+    {
+      "id": "p21",
+      "edicion_id": "e63",
+      "titulo": "Oppenheimer",
+      "seccion": "Esbilla",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "Christopher Nolan",
+      "duracion": "180 min",
+      "sinopsis": "La vida de Robert Oppenheimer y la bomba atómica.",
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "SkyShowtime"
+      ],
+      "galardones": [
+        "Mejor Montaje"
+      ],
+      "reparto": [
+        "Cillian Murphy"
+      ]
+    },
+    {
+      "id": "p22",
+      "edicion_id": "e62",
+      "titulo": "La quimera",
+      "seccion": "Retueyos",
+      "pais": "Italia",
+      "iso_pais": "IT",
+      "director": "Alice Rohrwacher",
+      "duracion": "130 min",
+      "sinopsis": "Un arqueólogo británico se involucra con ladrones de tumbas.",
+      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "MUBI"
+      ],
+      "galardones": [
+        "Mejor Dirección Artística"
+      ],
+      "reparto": [
+        "Josh O'Connor"
+      ]
+    },
+    {
+      "id": "p23",
+      "edicion_id": "e61",
+      "titulo": "El sol del futuro",
+      "seccion": "Albar",
+      "pais": "Italia",
+      "iso_pais": "IT",
+      "director": "Nanni Moretti",
+      "duracion": "95 min",
+      "sinopsis": "Un director de cine intenta rodar su nueva película.",
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Movistar+"
+      ],
+      "galardones": [
+        "Mejor Guion"
+      ],
+      "reparto": [
+        "Nanni Moretti"
+      ]
+    },
+    {
+      "id": "p24",
+      "edicion_id": "e60",
+      "titulo": "Drive My Car",
+      "seccion": "Albar",
+      "pais": "Japón",
+      "iso_pais": "JP",
+      "director": "Ryūsuke Hamaguchi",
+      "duracion": "179 min",
+      "sinopsis": "Un actor de teatro acepta dirigir una obra en Hiroshima.",
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Mejor Película"
+      ],
+      "reparto": [
+        "Hidetoshi Nishijima"
+      ]
+    },
+    {
+      "id": "p25",
+      "edicion_id": "e58",
+      "titulo": "Otra ronda",
+      "seccion": "Esbilla",
+      "pais": "Dinamarca",
+      "iso_pais": "DK",
+      "director": "Thomas Vinterberg",
+      "duracion": "117 min",
+      "sinopsis": "Cuatro profesores deciden probar una teoría sobre el alcohol.",
+      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Movistar+"
+      ],
+      "galardones": [
+        "Mejor Actor"
+      ],
+      "reparto": [
+        "Mads Mikkelsen"
+      ]
+    },
+    {
+      "id": "p26",
+      "edicion_id": "e63",
+      "titulo": "The Zone of Interest",
+      "seccion": "Albar",
+      "pais": "Reino Unido",
+      "iso_pais": "GB",
+      "director": "Jonathan Glazer",
+      "duracion": "105 min",
+      "sinopsis": "La vida familiar del comandante de Auschwitz.",
+      "cartel": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Gran Premio"
+      ],
+      "reparto": [
+        "Christian Friedel"
+      ]
+    },
+    {
+      "id": "p27",
+      "edicion_id": "e62",
+      "titulo": "May December",
+      "seccion": "Esbilla",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "Todd Haynes",
+      "duracion": "113 min",
+      "sinopsis": "Una actriz investiga la vida de la mujer que va a interpretar.",
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Movistar+"
+      ],
+      "galardones": [
+        "Mejor Guion"
+      ],
+      "reparto": [
+        "Natalie Portman"
+      ]
+    },
+    {
+      "id": "p28",
+      "edicion_id": "e61",
+      "titulo": "Perfect Days",
+      "seccion": "Albar",
+      "pais": "Japón",
+      "iso_pais": "JP",
+      "director": "Wim Wenders",
+      "duracion": "124 min",
+      "sinopsis": "Hirayama trabaja limpiando lavabos en Tokio.",
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "MUBI"
+      ],
+      "galardones": [
+        "Mejor Actor"
+      ],
+      "reparto": [
+        "Koji Yakusho"
+      ]
+    },
+    {
+      "id": "p29",
+      "edicion_id": "e60",
+      "titulo": "The Worst Person in the World",
+      "seccion": "Retueyos",
+      "pais": "Noruega",
+      "iso_pais": "NO",
+      "director": "Joachim Trier",
+      "duracion": "128 min",
+      "sinopsis": "Julie cumple 30 años y su vida es un desastre.",
+      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Mejor Actriz"
+      ],
+      "reparto": [
+        "Renate Reinsve"
+      ]
+    },
+    {
+      "id": "p30",
+      "edicion_id": "e58",
+      "titulo": "Sound of Metal",
+      "seccion": "Esbilla",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "Darius Marder",
+      "duracion": "120 min",
+      "sinopsis": "Un batería de metal empieza a perder la audición.",
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Amazon"
+      ],
+      "galardones": [
+        "Mejor Sonido"
+      ],
+      "reparto": [
+        "Riz Ahmed"
+      ]
+    },
+    {
+      "id": "p31",
+      "edicion_id": "e63",
+      "titulo": "Past Lives",
+      "seccion": "Retueyos",
+      "pais": "Corea del Sur",
+      "iso_pais": "KR",
+      "director": "Celine Song",
+      "duracion": "106 min",
+      "sinopsis": "Dos amigos de la infancia se reúnen en Nueva York.",
+      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Mejor Película"
+      ],
+      "reparto": [
+        "Greta Lee"
+      ]
+    },
+    {
+      "id": "p32",
+      "edicion_id": "e62",
+      "titulo": "Dream Scenario",
+      "seccion": "Esbilla",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "Kristoffer Borgli",
+      "duracion": "102 min",
+      "sinopsis": "Un hombre corriente aparece en los sueños de todo el mundo.",
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "HBO"
+      ],
+      "galardones": [
+        "Mejor Comedia"
+      ],
+      "reparto": [
+        "Nicolas Cage"
+      ]
+    },
+    {
+      "id": "p33",
+      "edicion_id": "e61",
+      "titulo": "Monster",
+      "seccion": "Albar",
+      "pais": "Japón",
+      "iso_pais": "JP",
+      "director": "Hirokazu Kore-eda",
+      "duracion": "126 min",
+      "sinopsis": "Una madre siente que algo va mal cuando su hijo se comporta raro.",
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Mejor Guion"
+      ],
+      "reparto": [
+        "Sakura Ando"
+      ]
+    },
+    {
+      "id": "p34",
+      "edicion_id": "e60",
+      "titulo": "EO",
+      "seccion": "Albar",
+      "pais": "Polonia",
+      "iso_pais": "PL",
+      "director": "Jerzy Skolimowski",
+      "duracion": "88 min",
+      "sinopsis": "Un burro gris se encuentra con personas buenas y malas.",
+      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "MUBI"
+      ],
+      "galardones": [
+        "Premio del Jurado"
+      ],
+      "reparto": []
+    },
+    {
+      "id": "p35",
+      "edicion_id": "e58",
+      "titulo": "Minari",
+      "seccion": "Retueyos",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "Lee Isaac Chung",
+      "duracion": "115 min",
+      "sinopsis": "Una familia coreana se muda a una granja en Arkansas.",
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Amazon"
+      ],
+      "galardones": [
+        "Mejor Actriz Secundaria"
+      ],
+      "reparto": [
+        "Youn Yuh-jung"
+      ]
+    },
+    {
+      "id": "p36",
+      "edicion_id": "e63",
+      "titulo": "The Killer",
+      "seccion": "Esbilla",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "David Fincher",
+      "duracion": "118 min",
+      "sinopsis": "Un asesino se enfrenta a sus jefes en una persecución.",
+      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Netflix"
+      ],
+      "galardones": [
+        "Mejor Montaje"
+      ],
+      "reparto": [
+        "Michael Fassbender"
+      ]
+    },
+    {
+      "id": "p37",
+      "edicion_id": "e62",
+      "titulo": "Ferrari",
+      "seccion": "Esbilla",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "Michael Mann",
+      "duracion": "130 min",
+      "sinopsis": "Biopic de Enzo Ferrari durante el verano de 1957.",
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Movistar+"
+      ],
+      "galardones": [
+        "Mejor Sonido"
+      ],
+      "reparto": [
+        "Adam Driver"
+      ]
+    },
+    {
+      "id": "p38",
+      "edicion_id": "e61",
+      "titulo": "A fuego lento",
+      "seccion": "Albar",
+      "pais": "Francia",
+      "iso_pais": "FR",
+      "director": "Trần Anh Hùng",
+      "duracion": "135 min",
+      "sinopsis": "La relación entre una cocinera y un gourmet.",
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Mejor Dirección"
+      ],
+      "reparto": [
+        "Juliette Binoche"
+      ]
+    },
+    {
+      "id": "p39",
+      "edicion_id": "e60",
+      "titulo": "Licorice Pizza",
+      "seccion": "Albar",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "Paul Thomas Anderson",
+      "duracion": "133 min",
+      "sinopsis": "Historia de amor en el Valle de San Fernando en 1973.",
+      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Amazon"
+      ],
+      "galardones": [
+        "Mejor Guion"
+      ],
+      "reparto": [
+        "Alana Haim"
+      ]
+    },
+    {
+      "id": "p40",
+      "edicion_id": "e58",
+      "titulo": "Quo Vadis, Aida?",
+      "seccion": "Albar",
+      "pais": "Bosnia y Herzegovina",
+      "iso_pais": "BA",
+      "director": "Jasmila Žbanić",
+      "duracion": "101 min",
+      "sinopsis": "Aida intenta salvar a su familia en Srebrenica.",
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Mejor Película"
+      ],
+      "reparto": [
+        "Jasna Đuričić"
+      ]
+    },
+    {
+      "id": "p41",
+      "edicion_id": "e63",
+      "titulo": "Priscilla",
+      "seccion": "Retueyos",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "Sofia Coppola",
+      "duracion": "113 min",
+      "sinopsis": "La vida de Priscilla Presley al lado de Elvis.",
+      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "MUBI"
+      ],
+      "galardones": [
+        "Mejor Actriz"
+      ],
+      "reparto": [
+        "Cailee Spaeny"
+      ]
+    },
+    {
+      "id": "p42",
+      "edicion_id": "e62",
+      "titulo": "Evil Does Not Exist",
+      "seccion": "Albar",
+      "pais": "Japón",
+      "iso_pais": "JP",
+      "director": "Ryūsuke Hamaguchi",
+      "duracion": "106 min",
+      "sinopsis": "Un pueblo lucha contra un proyecto de glamping.",
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Filmin"
+      ],
+      "galardones": [
+        "Premio Especial del Jurado"
+      ],
+      "reparto": [
+        "Hitoshi Omika"
+      ]
+    },
+    {
+      "id": "p43",
+      "edicion_id": "e61",
+      "titulo": "Maestro",
+      "seccion": "Esbilla",
+      "pais": "EEUU",
+      "iso_pais": "US",
+      "director": "Bradley Cooper",
+      "duracion": "129 min",
+      "sinopsis": "La compleja historia de amor de Leonard Bernstein.",
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Netflix"
+      ],
+      "galardones": [
+        "Mejor Maquillaje"
+      ],
+      "reparto": [
+        "Bradley Cooper"
+      ]
+    },
+    {
+      "id": "p44",
+      "edicion_id": "e60",
+      "titulo": "Triangle of Sadness",
+      "seccion": "Albar",
+      "pais": "Suecia",
+      "iso_pais": "SE",
+      "director": "Ruben Östlund",
+      "duracion": "147 min",
+      "sinopsis": "Un crucero de lujo naufraga en una isla desierta.",
+      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Movistar+"
+      ],
+      "galardones": [
+        "Palma de Oro"
+      ],
+      "reparto": [
+        "Harris Dickinson"
+      ]
+    },
+    {
+      "id": "p45",
+      "edicion_id": "e58",
+      "titulo": "The Father",
+      "seccion": "Esbilla",
+      "pais": "Reino Unido",
+      "iso_pais": "GB",
+      "director": "Florian Zeller",
+      "duracion": "97 min",
+      "sinopsis": "Un hombre mayor lucha contra la pérdida de memoria.",
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Netflix"
+      ],
+      "galardones": [
+        "Mejor Actor"
+      ],
+      "reparto": [
+        "Anthony Hopkins"
+      ]
+    },
+    {
+      "id": "p46",
+      "edicion_id": "e63",
+      "titulo": "El chico y la garza",
+      "seccion": "Enfants Terribles",
+      "pais": "Japón",
+      "iso_pais": "JP",
+      "director": "Hayao Miyazaki",
+      "duracion": "124 min",
+      "sinopsis": "Mahito viaja a un world compartido por vivos y muertos.",
+      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Netflix"
+      ],
+      "galardones": [
+        "Mejor Película Animación"
+      ],
+      "reparto": []
+    },
+    {
+      "id": "p47",
+      "edicion_id": "e62",
+      "titulo": "Green Border",
+      "seccion": "Albar",
+      "pais": "Polonia",
+      "iso_pais": "PL",
+      "director": "Agnieszka Holland",
+      "duracion": "147 min",
+      "sinopsis": "Refugiados en la frontera entre Bielorrusia y Polonia.",
+      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "MUBI"
+      ],
+      "galardones": [
+        "Premio del Público"
+      ],
+      "reparto": []
+    },
+    {
+      "id": "p48",
+      "edicion_id": "e61",
+      "titulo": "La quimera",
+      "seccion": "Albar",
+      "pais": "Italia",
+      "iso_pais": "IT",
+      "director": "Alice Rohrwacher",
+      "duracion": "130 min",
+      "sinopsis": "Un arqueólogo británico se involucra con ladrones de tumbas.",
+      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "MUBI"
+      ],
+      "galardones": [
+        "Mejor Dirección Artística"
+      ],
+      "reparto": [
+        "Josh O'Connor"
+      ]
+    },
+    {
+      "id": "p49",
+      "edicion_id": "e60",
+      "titulo": "Broker",
+      "seccion": "Esbilla",
+      "pais": "Corea del Sur",
+      "iso_pais": "KR",
+      "director": "Hirokazu Kore-eda",
+      "duracion": "129 min",
+      "sinopsis": "Cajas para bebés y tráfico de personas.",
+      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Netflix"
+      ],
+      "galardones": [
+        "Mejor Actor"
+      ],
+      "reparto": [
+        "Song Kang-ho"
+      ]
+    },
+    {
+      "id": "p50",
+      "edicion_id": "e58",
+      "titulo": "Wolfwalkers",
+      "seccion": "Enfants Terribles",
+      "pais": "Irlanda",
+      "iso_pais": "IE",
+      "director": "Tomm Moore",
+      "duracion": "103 min",
+      "sinopsis": "Una niña viaja a Irlanda para ayudar a su padre a cazar lobos.",
+      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "plataformas": [
+        "Apple TV+"
+      ],
+      "galardones": [
+        "Mejor Película Animación"
+      ],
+      "reparto": []
+    }
+  ],
+  "cineastas": [
+    {
+      "id": "c1",
+      "nombre": "Elena Martín",
+      "pais": "España",
+      "ciudad": "Barcelona",
+      "coordenadas": [
+        41.3851,
+        2.1734
+      ],
+      "foto": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-66536.jpg",
+      "biografia": "Directora barcelonesa.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p1"
+      ]
+    },
+    {
+      "id": "c2",
+      "nombre": "Albert Serra",
+      "pais": "España",
+      "ciudad": "Banyoles",
+      "coordenadas": [
+        42.1167,
+        2.7667
+      ],
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR--WpHs8b_n1XReCs9hqpfmVj0RIZGFlFUkQ&s",
+      "biografia": "Director catalán de cine de autor.",
+      "cargos": [
+        "Director",
+        "Productor"
+      ],
+      "peliculas": [
+        "p3"
+      ]
+    },
+    {
+      "id": "c3",
+      "nombre": "Selma Doborac",
+      "pais": "Austria",
+      "ciudad": "Viena",
+      "coordenadas": [
+        48.2082,
+        16.3738
+      ],
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh_oR_PJkHI9FzMj_MR4h-138vWVv5NWNncg&s",
+      "biografia": "Cineasta radicada en Viena.",
+      "cargos": [
+        "Director"
+      ],
+      "peliculas": [
+        "p11"
+      ]
+    },
+    {
+      "id": "c4",
+      "nombre": "Justine Triet",
+      "pais": "Francia",
+      "ciudad": "París",
+      "coordenadas": [
+        48.8566,
+        2.3522
+      ],
+      "foto": "https://www.parismatch.com/lmnr/var/pm/public/media/image/2022/03/02/08/Justine-Triet-Je-suis-beaucoup-plus-une-femme-en-competition-que-Sibyl-ne-l-est.jpg?VersionId=Tngjg3gYYAS4b8jPTHPxY.0KZY6xSdea",
+      "biografia": "Directora francesa, ganadora de la Palma de Oro.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p12"
+      ]
+    },
+    {
+      "id": "c5",
+      "nombre": "Aki Kaurismäki",
+      "pais": "Finlandia",
+      "ciudad": "Helsinki",
+      "coordenadas": [
+        60.1695,
+        24.9354
+      ],
+      "foto": "https://dafilmfestival.com/wp-content/uploads/2024/03/DIR_AkiKaurismaki_Dir_72.jpg",
+      "biografia": "Maestro del cine minimalista finlandés.",
+      "cargos": [
+        "Director",
+        "Productor"
+      ],
+      "peliculas": [
+        "p13"
+      ]
+    },
+    {
+      "id": "c6",
+      "nombre": "Lois Patiño",
+      "pais": "España",
+      "ciudad": "Vigo",
+      "coordenadas": [
+        42.2406,
+        -8.7207
+      ],
+      "foto": "https://atalantecinema.com/wp-content/uploads/fly-images/2506/Lois-Patino_1-scaled-768x768-cc.jpg",
+      "biografia": "Cineasta gallego de vanguardia.",
+      "cargos": [
+        "Director"
+      ],
+      "peliculas": [
+        "p14"
+      ]
+    },
+    {
+      "id": "c7",
+      "nombre": "Carla Simón",
+      "pais": "España",
+      "ciudad": "Barcelona",
+      "coordenadas": [
+        41.3851,
+        2.1734
+      ],
+      "foto": "https://e00-telva.uecdn.es/assets/multimedia/imagenes/2022/04/26/16509564491711.jpg",
+      "biografia": "Directora catalana, Oso de Oro en Berlín.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p15"
+      ]
+    },
+    {
+      "id": "c8",
+      "nombre": "Pablo Berger",
+      "pais": "España",
+      "ciudad": "Bilbao",
+      "coordenadas": [
+        43.2630,
+        -2.9350
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c8",
+      "biografia": "Director español conocido por su estilo visual.",
+      "cargos": [
+        "Director"
+      ],
+      "peliculas": [
+        "p16"
+      ]
+    },
+    {
+      "id": "c9",
+      "nombre": "Víctor Erice",
+      "pais": "España",
+      "ciudad": "Carranza",
+      "coordenadas": [
+        43.2081,
+        -3.3592
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c9",
+      "biografia": "Figura legendaria del cine español.",
+      "cargos": [
+        "Director"
+      ],
+      "peliculas": [
+        "p17"
+      ]
+    },
+    {
+      "id": "c10",
+      "nombre": "Molly Manning Walker",
+      "pais": "Reino Unido",
+      "ciudad": "Londres",
+      "coordenadas": [
+        51.5074,
+        -0.1278
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c10",
+      "biografia": "Directora y cinematógrafa británica.",
+      "cargos": [
+        "Director",
+        "Director de Fotografía"
+      ],
+      "peliculas": [
+        "p18"
+      ]
+    },
+    {
+      "id": "c11",
+      "nombre": "Rodrigo Sorogoyen",
+      "pais": "España",
+      "ciudad": "Madrid",
+      "coordenadas": [
+        40.4168,
+        -3.7038
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c11",
+      "biografia": "Especialista en cine de tensión y suspense.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p19"
+      ]
+    },
+    {
+      "id": "c12",
+      "nombre": "Chloé Zhao",
+      "pais": "EEUU",
+      "ciudad": "Pekín",
+      "coordenadas": [
+        39.9042,
+        116.4074
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c12",
+      "biografia": "Directora ganadora del Oscar.",
+      "cargos": [
+        "Director",
+        "Guionista",
+        "Productor"
+      ],
+      "peliculas": [
+        "p20"
+      ]
+    },
+    {
+      "id": "c13",
+      "nombre": "Christopher Nolan",
+      "pais": "Reino Unido",
+      "ciudad": "Londres",
+      "coordenadas": [
+        51.5074,
+        -0.1278
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c13",
+      "biografia": "Renovador del blockbuster inteligente.",
+      "cargos": [
+        "Director",
+        "Guionista",
+        "Productor"
+      ],
+      "peliculas": [
+        "p21"
+      ]
+    },
+    {
+      "id": "c14",
+      "nombre": "Alice Rohrwacher",
+      "pais": "Italia",
+      "ciudad": "Fiesole",
+      "coordenadas": [
+        43.8064,
+        11.2928
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c14",
+      "biografia": "Voz única del cine italiano rural.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p22",
+        "p48"
+      ]
+    },
+    {
+      "id": "c15",
+      "nombre": "Nanni Moretti",
+      "pais": "Italia",
+      "ciudad": "Brunico",
+      "coordenadas": [
+        46.7954,
+        11.9367
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c15",
+      "biografia": "Cineasta político y satírico.",
+      "cargos": [
+        "Director",
+        "Actor",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p23"
+      ]
+    },
+    {
+      "id": "c16",
+      "nombre": "Ryūsuke Hamaguchi",
+      "pais": "Japón",
+      "ciudad": "Kanagawa",
+      "coordenadas": [
+        35.4433,
+        139.6380
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c16",
+      "biografia": "Maestro de las relaciones humanas.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p24",
+        "p42"
+      ]
+    },
+    {
+      "id": "c17",
+      "nombre": "Thomas Vinterberg",
+      "pais": "Dinamarca",
+      "ciudad": "Frederiksberg",
+      "coordenadas": [
+        55.6761,
+        12.5333
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c17",
+      "biografia": "Co-fundador del movimiento Dogma 95.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p25"
+      ]
+    },
+    {
+      "id": "c18",
+      "nombre": "Jonathan Glazer",
+      "pais": "Reino Unido",
+      "ciudad": "Londres",
+      "coordenadas": [
+        51.5074,
+        -0.1278
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c18",
+      "biografia": "Director visualmente impactante.",
+      "cargos": [
+        "Director"
+      ],
+      "peliculas": [
+        "p26"
+      ]
+    },
+    {
+      "id": "c19",
+      "nombre": "Todd Haynes",
+      "pais": "EEUU",
+      "ciudad": "Los Ángeles",
+      "coordenadas": [
+        34.0522,
+        -118.2437
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c19",
+      "biografia": "Referente del cine independiente americano.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p27"
+      ]
+    },
+    {
+      "id": "c20",
+      "nombre": "Wim Wenders",
+      "pais": "Alemania",
+      "ciudad": "Düsseldorf",
+      "coordenadas": [
+        51.2277,
+        6.7735
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c20",
+      "biografia": "Leyenda del cine europeo.",
+      "cargos": [
+        "Director",
+        "Productor"
+      ],
+      "peliculas": [
+        "p28"
+      ]
+    },
+    {
+      "id": "c21",
+      "nombre": "Joachim Trier",
+      "pais": "Noruega",
+      "ciudad": "Copenhague",
+      "coordenadas": [
+        55.6761,
+        12.5683
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c21",
+      "biografia": "Parte de la nueva ola nórdica.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p29"
+      ]
+    },
+    {
+      "id": "c22",
+      "nombre": "Darius Marder",
+      "pais": "EEUU",
+      "ciudad": "Nueva York",
+      "coordenadas": [
+        40.7128,
+        -74.0060
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c22",
+      "biografia": "Director enfocado en el sonido y la experiencia.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p30"
+      ]
+    },
+    {
+      "id": "c23",
+      "nombre": "Celine Song",
+      "pais": "Corea del Sur",
+      "ciudad": "Seúl",
+      "coordenadas": [
+        37.5665,
+        126.9780
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c23",
+      "biografia": "Dramaturga y cineasta coreano-canadiense.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p31"
+      ]
+    },
+    {
+      "id": "c24",
+      "nombre": "Kristoffer Borgli",
+      "pais": "Noruega",
+      "ciudad": "Oslo",
+      "coordenadas": [
+        59.9139,
+        10.7522
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c24",
+      "biografia": "Cineasta satírico contemporáneo.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p32"
+      ]
+    },
+    {
+      "id": "c25",
+      "nombre": "Hirokazu Kore-eda",
+      "pais": "Japón",
+      "ciudad": "Tokio",
+      "coordenadas": [
+        35.6895,
+        139.6917
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c25",
+      "biografia": "Especialista en retratos familiares.",
+      "cargos": [
+        "Director",
+        "Guionista",
+        "Productor"
+      ],
+      "peliculas": [
+        "p33",
+        "p49"
+      ]
+    },
+    {
+      "id": "c26",
+      "nombre": "Jerzy Skolimowski",
+      "pais": "Polonia",
+      "ciudad": "Lodz",
+      "coordenadas": [
+        51.7592,
+        19.4560
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c26",
+      "biografia": "Veterano del cine experimental polaco.",
+      "cargos": [
+        "Director",
+        "Guionista",
+        "Actor"
+      ],
+      "peliculas": [
+        "p34"
+      ]
+    },
+    {
+      "id": "c27",
+      "nombre": "Lee Isaac Chung",
+      "pais": "EEUU",
+      "ciudad": "Denver",
+      "coordenadas": [
+        39.7392,
+        -104.9903
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c27",
+      "biografia": "Director sensible de origen coreano.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p35"
+      ]
+    },
+    {
+      "id": "c28",
+      "nombre": "David Fincher",
+      "pais": "EEUU",
+      "ciudad": "Denver",
+      "coordenadas": [
+        39.7392,
+        -104.9903
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c28",
+      "biografia": "Perfeccionista del cine negro moderno.",
+      "cargos": [
+        "Director",
+        "Productor"
+      ],
+      "peliculas": [
+        "p36"
+      ]
+    },
+    {
+      "id": "c29",
+      "nombre": "Michael Mann",
+      "pais": "EEUU",
+      "ciudad": "Chicago",
+      "coordenadas": [
+        41.8781,
+        -87.6298
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c29",
+      "biografia": "Maestro del estilo visual estilizado.",
+      "cargos": [
+        "Director",
+        "Productor",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p37"
+      ]
+    },
+    {
+      "id": "c30",
+      "nombre": "Trần Anh Hùng",
+      "pais": "Vietnam",
+      "ciudad": "Da Nang",
+      "coordenadas": [
+        16.0544,
+        108.2022
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c30",
+      "biografia": "Cineasta vietnamita de gran elegancia.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p38"
+      ]
+    },
+    {
+      "id": "c31",
+      "nombre": "Paul Thomas Anderson",
+      "pais": "EEUU",
+      "ciudad": "Los Ángeles",
+      "coordenadas": [
+        34.0522,
+        -118.2437
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c31",
+      "biografia": "Uno de los mejores cineastas vivos.",
+      "cargos": [
+        "Director",
+        "Guionista",
+        "Productor",
+        "Director de Fotografía"
+      ],
+      "peliculas": [
+        "p39"
+      ]
+    },
+    {
+      "id": "c32",
+      "nombre": "Jasmila Žbanić",
+      "pais": "Bosnia y Herzegovina",
+      "ciudad": "Sarajevo",
+      "coordenadas": [
+        43.8563,
+        18.4131
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c32",
+      "biografia": "Voz potente del cine balcánico.",
+      "cargos": [
+        "Director",
+        "Guionista",
+        "Productor"
+      ],
+      "peliculas": [
+        "p40"
+      ]
+    },
+    {
+      "id": "c33",
+      "nombre": "Sofia Coppola",
+      "pais": "EEUU",
+      "ciudad": "Nueva York",
+      "coordenadas": [
+        40.7128,
+        -74.0060
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c33",
+      "biografia": "Retratista de la soledad contemporánea.",
+      "cargos": [
+        "Director",
+        "Guionista",
+        "Productor"
+      ],
+      "peliculas": [
+        "p41"
+      ]
+    },
+    {
+      "id": "c34",
+      "nombre": "Ruben Östlund",
+      "pais": "Suecia",
+      "ciudad": "Styrsö",
+      "coordenadas": [
+        57.6167,
+        11.7833
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c34",
+      "biografia": "Provocador y analista social sueco.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p44"
+      ]
+    },
+    {
+      "id": "c35",
+      "nombre": "Hayao Miyazaki",
+      "pais": "Japón",
+      "ciudad": "Tokio",
+      "coordenadas": [
+        35.6895,
+        139.6917
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c35",
+      "biografia": "Maestro absoluto de la animación.",
+      "cargos": [
+        "Director",
+        "Guionista",
+        "Productor"
+      ],
+      "peliculas": [
+        "p46"
+      ]
+    },
+    {
+      "id": "c36",
+      "nombre": "Agnieszka Holland",
+      "pais": "Polonia",
+      "ciudad": "Varsovia",
+      "coordenadas": [
+        52.2297,
+        21.0122
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c36",
+      "biografia": "Cineasta comprometida con la historia.",
+      "cargos": [
+        "Director",
+        "Guionista"
+      ],
+      "peliculas": [
+        "p47"
+      ]
+    },
+    {
+      "id": "c37",
+      "nombre": "Laia Costa",
+      "pais": "España",
+      "ciudad": "Barcelona",
+      "coordenadas": [
+        41.3851,
+        2.1734
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c37",
+      "biografia": "Actriz española internacional.",
+      "cargos": [
+        "Actor"
+      ],
+      "peliculas": [
+        "p1"
+      ]
+    },
+    {
+      "id": "c38",
+      "nombre": "Benoît Magimel",
+      "pais": "Francia",
+      "ciudad": "París",
+      "coordenadas": [
+        48.8566,
+        2.3522
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c38",
+      "biografia": "Actor francés de gran trayectoria.",
+      "cargos": [
+        "Actor"
+      ],
+      "peliculas": [
+        "p3"
+      ]
+    },
+    {
+      "id": "c39",
+      "nombre": "Cillian Murphy",
+      "pais": "Irlanda",
+      "ciudad": "Cork",
+      "coordenadas": [
+        51.8985,
+        -8.4756
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c39",
+      "biografia": "Actor camaleónico.",
+      "cargos": [
+        "Actor"
+      ],
+      "peliculas": [
+        "p21"
+      ]
+    },
+    {
+      "id": "c40",
+      "nombre": "Sandra Hüller",
+      "pais": "Alemania",
+      "ciudad": "Suhl",
+      "coordenadas": [
+        50.6094,
+        10.6861
+      ],
+      "foto": "https://i.pravatar.cc/300?u=c40",
+      "biografia": "Actriz alemana de prestigio mundial.",
+      "cargos": [
+        "Actor"
+      ],
+      "peliculas": [
+        "p12",
+        "p26"
+      ]
+    }
+  ],
+  "secciones": [
+    {
+      "id": "s1",
+      "nombre": "Retueyos",
+      "descripcion": "Competición internacional de largometrajes.",
+      "años_activa": "1995-2026"
+    },
+    {
+      "id": "s2",
+      "nombre": "Albar",
+      "descripcion": "Cineastas consagrados y grandes nombres.",
+      "años_activa": "2010-2026"
+    },
+    {
+      "id": "s3",
+      "nombre": "Esbilla",
+      "descripcion": "Selección de las mejores películas de la temporada.",
+      "años_activa": "2000-2026"
+    },
+    {
+      "id": "s4",
+      "nombre": "Tierres en Trance",
+      "descripcion": "Foco en el cine iberoamericano.",
+      "años_activa": "2019-2026"
+    },
+    {
+      "id": "s5",
+      "nombre": "Enfants Terribles",
+      "descripcion": "Cine para el público más joven.",
+      "años_activa": "1963-2026"
+    },
+    {
+      "id": "s6",
+      "nombre": "Llendes",
+      "descripcion": "Cine experimental y vanguardia.",
+      "años_activa": "2005-2026"
+    },
+    {
+      "id": "s7",
+      "nombre": "Gijón de Cine",
+      "descripcion": "Producciones locales y regionales.",
+      "años_activa": "2012-2026"
+    },
+    {
+      "id": "s8",
+      "nombre": "Foco",
+      "descripcion": "Retrospectivas de autores.",
+      "años_activa": "1990-2026"
+    },
+    {
+      "id": "s9",
+      "nombre": "Noche del Corto",
+      "descripcion": "Competición de cortometrajes.",
+      "años_activa": "1980-2026"
+    },
+    {
+      "id": "s10",
+      "nombre": "Crossing Europe",
+      "descripcion": "Colaboración con festivales europeos.",
+      "años_activa": "2020-2024"
+    },
+    {
+      "id": "s11",
+      "nombre": "Cine de Barrio",
+      "descripcion": "Proyecciones en espacios no convencionales.",
+      "años_activa": "2021-2026"
+    },
+    {
+      "id": "s12",
+      "nombre": "DOCS",
+      "descripcion": "Cine documental contemporáneo.",
+      "años_activa": "2015-2026"
+    },
+    {
+      "id": "s13",
+      "nombre": "Animaficx",
+      "descripcion": "Cine de animación para adultos.",
+      "años_activa": "2018-2026"
+    }
+  ],
+  "eventos": [
+    {
+      "id": "ev1",
+      "nombre": "Inauguración FICX 61",
+      "fecha": "2023-11-17",
+      "lugar": "Teatro Jovellanos",
+      "coordenadas": [
+        43.5414,
+        -5.6615
+      ],
+      "descripcion": "Gala de apertura.",
+      "tipo": "Gala"
+    },
+    {
+      "id": "ev2",
+      "nombre": "Gala de Clausura 61",
+      "fecha": "2023-11-25",
+      "lugar": "Teatro Jovellanos",
+      "coordenadas": [
+        43.5414,
+        -5.6615
+      ],
+      "descripcion": "Entrega de premios.",
+      "tipo": "Gala"
+    },
+    {
+      "id": "ev3",
+      "nombre": "Presentación 'Pacifiction'",
+      "fecha": "2022-11-12",
+      "lugar": "Teatro Jovellanos",
+      "coordenadas": [
+        43.5414,
+        -5.6615
+      ],
+      "descripcion": "Estreno nacional.",
+      "tipo": "Proyección"
+    },
+    {
+      "id": "ev4",
+      "nombre": "Masterclass Víctor Erice",
+      "fecha": "2022-11-15",
+      "lugar": "CCA",
+      "coordenadas": [
+        43.5434,
+        -5.6625
+      ],
+      "descripcion": "Encuentro con el autor.",
+      "tipo": "Masterclass"
+    },
+    {
+      "id": "ev5",
+      "nombre": "Noche del Cine Coreano",
+      "fecha": "2023-11-19",
+      "lugar": "Antiguo Instituto",
+      "coordenadas": [
+        43.5434,
+        -5.6625
+      ],
+      "descripcion": "Ciclo especial.",
+      "tipo": "Ciclo"
+    },
+    {
+      "id": "ev6",
+      "nombre": "Concierto FICX Sound",
+      "fecha": "2024-11-18",
+      "lugar": "Plaza Mayor",
+      "coordenadas": [
+        43.545,
+        -5.663
+      ],
+      "descripcion": "Música y cine.",
+      "tipo": "Otros"
+    },
+    {
+      "id": "ev7",
+      "nombre": "Mesa Redonda: Cine y IA",
+      "fecha": "2025-11-16",
+      "lugar": "Laboral",
+      "coordenadas": [
+        43.524,
+        -5.614
+      ],
+      "descripcion": "Debate tecnológico.",
+      "tipo": "Mesa Redonda"
+    },
+    {
+      "id": "ev8",
+      "nombre": "Taller de Animación",
+      "fecha": "2025-11-20",
+      "lugar": "Sede Jovellanos",
+      "coordenadas": [
+        43.5414,
+        -5.6615
+      ],
+      "descripcion": "Para niños.",
+      "tipo": "Taller"
+    },
+    {
+      "id": "ev9",
+      "nombre": "Proyección al Aire Libre",
+      "fecha": "2024-08-15",
+      "lugar": "Playa San Lorenzo",
+      "coordenadas": [
+        43.54,
+        -5.65
+      ],
+      "descripcion": "Pre-festival.",
+      "tipo": "Proyección"
+    },
+    {
+      "id": "ev10",
+      "nombre": "Homenaje Alejandro Díaz",
+      "fecha": "2023-11-22",
+      "lugar": "Teatro Jovellanos",
+      "coordenadas": [
+        43.5414,
+        -5.6615
+      ],
+      "descripcion": "Hito histórico.",
+      "tipo": "Gala"
+    },
+    {
+      "id": "ev11",
+      "nombre": "Premiere Mundial",
+      "fecha": "2024-11-15",
+      "lugar": "Cine Yelmo",
+      "coordenadas": [
+        43.53,
+        -5.67
+      ],
+      "descripcion": "Alfombra roja.",
+      "tipo": "Proyección"
+    },
+    {
+      "id": "ev12",
+      "nombre": "Firma de Libros",
+      "fecha": "2024-11-17",
+      "lugar": "Librería Central",
+      "coordenadas": [
+        43.54,
+        -5.66
+      ],
+      "descripcion": "Autores invitados.",
+      "tipo": "Otros"
+    },
+    {
+      "id": "ev13",
+      "nombre": "Networking Industry",
+      "fecha": "2023-11-20",
+      "lugar": "Hotel Hernán Cortés",
+      "coordenadas": [
+        43.54,
+        -5.66
+      ],
+      "descripcion": "Para profesionales.",
+      "tipo": "Networking"
+    },
+    {
+      "id": "ev14",
+      "nombre": "Exposición Carteles",
+      "fecha": "2022-11-10",
+      "lugar": "Museo Barjola",
+      "coordenadas": [
+        43.54,
+        -5.66
+      ],
+      "descripcion": "Historia visual.",
+      "tipo": "Exposición"
+    },
+    {
+      "id": "ev15",
+      "nombre": "FICX Lab",
+      "fecha": "2025-11-18",
+      "lugar": "Laboral",
+      "coordenadas": [
+        43.524,
+        -5.614
+      ],
+      "descripcion": "Laboratorio creación.",
+      "tipo": "Taller"
+    },
+    {
+      "id": "ev16",
+      "nombre": "Gala Benéfica",
+      "fecha": "2021-11-25",
+      "lugar": "Teatro Jovellanos",
+      "coordenadas": [
+        43.5414,
+        -5.6615
+      ],
+      "descripcion": "Cine solidario.",
+      "tipo": "Gala"
+    },
+    {
+      "id": "ev17",
+      "nombre": "Vermú de Cine",
+      "fecha": "2024-11-19",
+      "lugar": "Plazuela San Miguel",
+      "coordenadas": [
+        43.54,
+        -5.66
+      ],
+      "descripcion": "Encuentro informal.",
+      "tipo": "Networking"
+    },
+    {
+      "id": "ev18",
+      "nombre": "Visita Guiada",
+      "fecha": "2023-11-18",
+      "lugar": "Casco Histórico",
+      "coordenadas": [
+        43.54,
+        -5.66
+      ],
+      "descripcion": "Ruta de cine.",
+      "tipo": "Otros"
+    },
+    {
+      "id": "ev19",
+      "nombre": "Cine-Concierto",
+      "fecha": "2022-11-21",
+      "lugar": "Teatro Jovellanos",
+      "coordenadas": [
+        43.5414,
+        -5.6615
+      ],
+      "descripcion": "Cine mudo con piano.",
+      "tipo": "Otros"
+    },
+    {
+      "id": "ev20",
+      "nombre": "Premios Industry",
+      "fecha": "2024-11-21",
+      "lugar": "Laboral",
+      "coordenadas": [
+        43.524,
+        -5.614
+      ],
+      "descripcion": "Premios técnicos.",
+      "tipo": "Gala"
+    },
+    {
+      "id": "ev21",
+      "nombre": "Gala Inaugural 62",
+      "fecha": "2024-11-14",
+      "lugar": "Teatro Jovellanos",
+      "coordenadas": [
+        43.5414,
+        -5.6615
+      ],
+      "descripcion": "Inicio edición 62.",
+      "tipo": "Gala"
+    },
+    {
+      "id": "ev22",
+      "nombre": "Homenaje a la Crítica",
+      "fecha": "2025-11-21",
+      "lugar": "Antiguo Instituto",
+      "coordenadas": [
+        43.5434,
+        -5.6625
+      ],
+      "descripcion": "Premios prensa.",
+      "tipo": "Gala"
+    }
+  ],
+  "galardones": [
+    {
+      "id": "g1",
+      "nombre": "Mejor Película",
+      "categoria": "Sección Oficial Retueyos",
+      "descripcion": "El máximo galardón del festival otorgado a la mejor producción de la sección competitiva Retueyos, que destaca por su innovación y calidad cinematográfica."
+    },
+    {
+      "id": "g2",
+      "nombre": "Mejor Película Albar",
+      "categoria": "Sección Oficial Albar",
+      "descripcion": "Premio otorgado a la mejor película de la sección Albar, dedicada a cineastas de larga trayectoria y obras de gran calado artístico."
+    },
+    {
+      "id": "g3",
+      "nombre": "Mejor Dirección",
+      "categoria": "Sección Oficial"
+    },
+    {
+      "id": "g4",
+      "nombre": "Premio del Público",
+      "categoria": "General"
+    },
+    {
+      "id": "g5",
+      "nombre": "Premio FIPRESCI",
+      "categoria": "Crítica Internacional",
+      "descripcion": "Galardón otorgado por la Federación Internacional de la Prensa Cinematográfica a la mejor película, reconociendo el valor crítico y narrativo de la obra."
+    },
+    {
+      "id": "g6",
+      "nombre": "Mejor Cortometraje",
+      "categoria": "Sección Cortos"
+    },
+    {
+      "id": "g7",
+      "nombre": "Mejor Actriz/Actor",
+      "categoria": "Interpretación"
+    },
+    {
+      "id": "g8",
+      "nombre": "Premio Honorífico",
+      "categoria": "Trayectoria"
+    }
+  ],
+  "sedes": [
+    {
+      "id": "sd1",
+      "nombre": "Teatro Jovellanos",
+      "direccion": "Paseo de Begoña, 11",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/77/Tatro_Jovellanos_Gij%C3%B3n.jpg",
+      "telefono": "985 18 29 29",
+      "aforo": 1184,
+      "coordenadas": [
+        43.5414,
+        -5.6615
+      ]
+    },
+    {
+      "id": "sd2",
+      "nombre": "Antiguo Instituto",
+      "direccion": "Calle Jovellanos, 21",
+      "imagen": "https://masdearte.com/media/g_CentroCulturaAntiguoInstituto.jpg",
+      "telefono": "985 18 10 39",
+      "aforo": 250,
+      "coordenadas": [
+        43.5434,
+        -5.6625
+      ]
+    },
+    {
+      "id": "sd3",
+      "nombre": "Laboral Ciudad de la Cultura",
+      "direccion": "Luis Moya Blanco, 261",
+      "telefono": "985 18 58 58",
+      "aforo": 1400,
+      "coordenadas": [
+        43.524,
+        -5.614
+      ]
+    },
+    {
+      "id": "sd4",
+      "nombre": "Cines Yelmo Ocimax",
+      "direccion": "Calle Maestro Amado Morán, s/n",
+      "coordenadas": [
+        43.53,
+        -5.67
+      ]
+    },
+    {
+      "id": "sd5",
+      "nombre": "Centro de Cultura Antiguo Instituto",
+      "direccion": "Calle Jovellanos, 21",
+      "imagen": "https://masdearte.com/media/g_CentroCulturaAntiguoInstituto.jpg",
+      "telefono": "985 18 10 39",
+      "aforo": 250,
+      "coordenadas": [
+        43.5434,
+        -5.6625
+      ]
+    },
+    {
+      "id": "sd6",
+      "nombre": "Museo Barjola",
+      "direccion": "Calle Trinidad, 17",
+      "coordenadas": [
+        43.546,
+        -5.665
+      ]
+    },
+    {
+      "id": "sd7",
+      "nombre": "Plaza Mayor",
+      "direccion": "Plaza Mayor, s/n",
+      "coordenadas": [
+        43.545,
+        -5.663
+      ]
+    }
+  ],
+  "contacto": {
+    "email": "info@ficx.es",
+    "telefono": "+34 985 18 22 21",
+    "direccion": "Calle Francisco Ferrer, 27, 33201 Gijón, Asturias",
+    "redes": {
+      "instagram": "https://instagram.com/ficx",
+      "twitter": "https://twitter.com/ficxixon",
+      "facebook": "https://facebook.com/ficx.oficial"
+    }
+  }
+}
