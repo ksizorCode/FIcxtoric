@@ -970,7 +970,7 @@ window.app = {
     }
 };
 
-init();
+
 function showSedeDetail(item) {
     modalBody.innerHTML = `
         <div class="sede-detail fade-in">
@@ -1165,3 +1165,4 @@ function renderFavItemCard(type, item) {
         </div>
     `;
 }
+init();
