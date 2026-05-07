@@ -330,9 +330,11 @@ body {
 .main-content {
     flex-grow: 1;
     display: flex;
+    align-items: env();
     flex-direction: column;
     background: var(--bg-gradient);
     overflow: hidden;
+
 }
 
 .content-display {
@@ -343,12 +345,13 @@ body {
 }
 
 .top-bar {
-    height: 80px;
+    height: 160px;
     padding: 0 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--glass-border);
+
 }
 
 .search-container {
@@ -771,11 +774,13 @@ body {
         padding: 0 1rem;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; /* Firefox */
+        scrollbar-width: none;
+        /* Firefox */
     }
 
     .nav-links::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
+        display: none;
+        /* Chrome, Safari, Opera */
     }
 
     .nav-links li {
