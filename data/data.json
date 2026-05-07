@@ -6,16 +6,43 @@
   },
   "ediciones": [
     {
+      "id": "e64",
+      "numero": 64,
+      "año": 2026,
+      "cartel": "assets/img/64_cartel.jpg",
+      "director": "Alejandro Díaz Castaño",
+      "web": "https://64.ficx.es",
+      "programa": "https://ficx.es/programa-64.pdf",
+      "fecha_inicio": "2026-11-19",
+      "fecha_fin": "2026-11-27",
+      "resumen_anual": "Propuesta 64º Aniversario: Miradas en Red.",
+      "color": "#0053D9",
+      "secciones": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "estadisticas": {
+        "peliculas": 170,
+        "cineastas": 100,
+        "sedes": 18,
+        "asistentes": 82000
+      }
+    },
+    {
       "id": "e63",
       "numero": 63,
       "año": 2025,
-      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "cartel": "assets/img/63_cartel.jpg",
       "director": "Alejandro Díaz Castaño",
       "web": "https://63.ficx.es",
       "programa": "https://ficx.es/programa-63.pdf",
       "fecha_inicio": "2025-11-15",
       "fecha_fin": "2025-11-23",
       "resumen_anual": "Regreso masivo del público y enfoque especial en el cine asiático.",
+      "color": "#FFB000",
       "secciones": [
         "s1",
         "s2",
@@ -34,13 +61,14 @@
       "id": "e62",
       "numero": 62,
       "año": 2024,
-      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "cartel": "assets/img/62_cartel.jpg",
       "director": "Alejandro Díaz Castaño",
       "web": "https://62.ficx.es",
       "programa": "https://ficx.es/programa-62.pdf",
       "fecha_inicio": "2024-11-14",
       "fecha_fin": "2024-11-22",
       "resumen_anual": "Récord de películas presentadas a concurso.",
+      "color": "#E24F7D",
       "secciones": [
         "s1",
         "s2",
@@ -58,13 +86,14 @@
       "id": "e61",
       "numero": 61,
       "año": 2023,
-      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "cartel": "assets/img/61_cartel.jpg",
       "director": "Alejandro Díaz Castaño",
       "web": "https://61.ficx.es",
       "programa": "https://ficx.es/programa-61.pdf",
       "fecha_inicio": "2023-11-17",
       "fecha_fin": "2023-11-25",
       "resumen_anual": "Consolidación de nuevas secciones.",
+      "color": "#D43E13",
       "secciones": [
         "s1",
         "s2",
@@ -82,13 +111,14 @@
       "id": "e60",
       "numero": 60,
       "año": 2022,
-      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "cartel": "assets/img/60_cartel.jpg",
       "director": "Alejandro Díaz Castaño",
       "web": "https://60.ficx.es",
       "programa": "https://ficx.es/programa-60.pdf",
       "fecha_inicio": "2022-11-11",
       "fecha_fin": "2022-11-19",
       "resumen_anual": "Aniversario de diamante (60 años).",
+      "color": "#86744C",
       "secciones": [
         "s1",
         "s2",
@@ -107,13 +137,14 @@
       "id": "e59",
       "numero": 59,
       "año": 2021,
-      "cartel": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop",
+      "cartel": "assets/img/59_cartel.jpg",
       "director": "Alejandro Díaz Castaño",
       "web": "https://59.ficx.es",
       "programa": "https://ficx.es/programa-59.pdf",
       "fecha_inicio": "2021-11-19",
       "fecha_fin": "2021-11-27",
       "resumen_anual": "Regreso a la presencialidad controlada.",
+      "color": "#38BD9F",
       "secciones": [
         "s1",
         "s2",
@@ -130,13 +161,14 @@
       "id": "e58",
       "numero": 58,
       "año": 2020,
-      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "cartel": "assets/img/58_cartel.jpg",
       "director": "Alejandro Díaz Castaño",
       "web": "https://58.ficx.es",
       "programa": "https://ficx.es/programa-58.pdf",
       "fecha_inicio": "2020-11-20",
       "fecha_fin": "2020-11-28",
       "resumen_anual": "Edición ONLINE histórica debido a la pandemia mundial.",
+      "color": "#F39E00",
       "secciones": [
         "s1",
         "s2"
@@ -152,7 +184,7 @@
       "id": "e57",
       "numero": 57,
       "año": 2019,
-      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "cartel": "assets/img/57_cartel.jpg",
       "director": "Alejandro Díaz Castaño",
       "web": "https://57.ficx.es",
       "programa": "https://ficx.es/programa-57.pdf",
@@ -174,13 +206,14 @@
       "id": "e56",
       "numero": 56,
       "año": 2018,
-      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "cartel": "assets/img/56_cartel.jpg",
       "director": "Alejandro Díaz Castaño",
       "web": "https://56.ficx.es",
       "programa": "https://ficx.es/programa-56.pdf",
       "fecha_inicio": "2018-11-16",
       "fecha_fin": "2018-11-24",
       "resumen_anual": "Apuesta por el cine de autor más radical.",
+      "color": "#5C6BC0",
       "secciones": [
         "s1",
         "s2"
@@ -196,13 +229,14 @@
       "id": "e55",
       "numero": 55,
       "año": 2017,
-      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "cartel": "assets/img/55_cartel.webp",
       "director": "Alejandro Díaz Castaño",
       "web": "https://55.ficx.es",
       "programa": "https://ficx.es/programa-55.pdf",
       "fecha_inicio": "2017-11-17",
       "fecha_fin": "2017-11-25",
       "resumen_anual": "Primer año de Alejandro Díaz Castaño como director.",
+      "color": "#66BB6A",
       "secciones": [
         "s1",
         "s2"
@@ -218,13 +252,14 @@
       "id": "e54",
       "numero": 54,
       "año": 2016,
-      "cartel": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+      "cartel": "assets/img/54_cartel.jpg",
       "director": "Ignacio Carballo",
       "web": "https://54.ficx.es",
       "programa": "https://ficx.es/programa-54.pdf",
       "fecha_inicio": "2016-11-19",
       "fecha_fin": "2016-11-27",
       "resumen_anual": "Enfoque en la educación cinematográfica.",
+      "color": "#FFA726",
       "secciones": [
         "s1",
         "s5"
@@ -240,13 +275,14 @@
       "id": "e53",
       "numero": 53,
       "año": 2015,
-      "cartel": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop",
+      "cartel": "assets/img/53_cartel.jpg",
       "director": "Ignacio Carballo",
       "web": "https://53.ficx.es",
       "programa": "https://ficx.es/programa-53.pdf",
       "fecha_inicio": "2015-11-20",
       "fecha_fin": "2015-11-28",
       "resumen_anual": "Gran presencia de cine independiente USA.",
+      "color": "#EF5350",
       "secciones": [
         "s1",
         "s5"
@@ -262,13 +298,14 @@
       "id": "e52",
       "numero": 52,
       "año": 2014,
-      "cartel": "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+      "cartel": "assets/img/52_cartel.avif",
       "director": "Ignacio Carballo",
       "web": "https://52.ficx.es",
       "programa": "https://ficx.es/programa-52.pdf",
       "fecha_inicio": "2014-11-21",
       "fecha_fin": "2014-11-29",
       "resumen_anual": "Apertura a nuevos mercados asiáticos.",
+      "color": "#7E57C2",
       "secciones": [
         "s1",
         "s5"
@@ -284,13 +321,14 @@
       "id": "e51",
       "numero": 51,
       "año": 2013,
-      "cartel": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+      "cartel": "assets/img/51_cartel.webp",
       "director": "Ignacio Carballo",
       "web": "https://51.ficx.es",
       "programa": "https://ficx.es/programa-51.pdf",
       "fecha_inicio": "2013-11-15",
       "fecha_fin": "2013-11-23",
       "resumen_anual": "Consolidación de la etapa Carballo.",
+      "color": "#26C6DA",
       "secciones": [
         "s1",
         "s5"
@@ -306,13 +344,14 @@
       "id": "e50",
       "numero": 50,
       "año": 2012,
-      "cartel": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+      "cartel": "assets/img/50_cartel.webp",
       "director": "Ignacio Carballo",
       "web": "https://50.ficx.es",
       "programa": "https://ficx.es/programa-50.pdf",
       "fecha_inicio": "2012-11-16",
       "fecha_fin": "2012-11-24",
       "resumen_anual": "Bodas de oro del festival (50 años).",
+      "color": "#FFD700",
       "secciones": [
         "s1",
         "s2"
@@ -328,13 +367,14 @@
       "id": "e49",
       "numero": 49,
       "año": 2011,
-      "cartel": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
+      "cartel": "assets/img/49_cartel.jpg",
       "director": "José Luis Cienfuegos",
       "web": "https://49.ficx.es",
       "programa": "https://ficx.es/programa-49.pdf",
       "fecha_inicio": "2011-11-18",
       "fecha_fin": "2011-11-26",
       "resumen_anual": "Último año de José Luis Cienfuegos.",
+      "color": "#9CCC65",
       "secciones": [
         "s1",
         "s2"
@@ -357,6 +397,7 @@
       "fecha_inicio": "2010-11-19",
       "fecha_fin": "2010-11-27",
       "resumen_anual": "Fuerte apuesta por el cine independiente español.",
+      "color": "#AB47BC",
       "secciones": [
         "s1",
         "s2"
@@ -379,6 +420,7 @@
       "fecha_inicio": "2009-11-20",
       "fecha_fin": "2009-11-28",
       "resumen_anual": "Homenaje a grandes directores europeos.",
+      "color": "#FF7043",
       "secciones": [
         "s1",
         "s2"
@@ -401,6 +443,7 @@
       "fecha_inicio": "2008-11-21",
       "fecha_fin": "2008-11-29",
       "resumen_anual": "Éxito de público en las proyecciones nocturnas.",
+      "color": "#26A69A",
       "secciones": [
         "s1",
         "s3"
@@ -423,6 +466,7 @@
       "fecha_inicio": "2007-11-22",
       "fecha_fin": "2007-11-30",
       "resumen_anual": "Consolidación del festival como referente Indie.",
+      "color": "#EC407A",
       "secciones": [
         "s1",
         "s3"
@@ -445,6 +489,7 @@
       "fecha_inicio": "2006-11-23",
       "fecha_fin": "2006-12-01",
       "resumen_anual": "Premios a nuevos talentos internacionales.",
+      "color": "#42A5F5",
       "secciones": [
         "s1",
         "s3"
@@ -467,6 +512,7 @@
       "fecha_inicio": "2005-11-24",
       "fecha_fin": "2005-12-02",
       "resumen_anual": "Apuesta por el cine de los Balcanes.",
+      "color": "#78909C",
       "secciones": [
         "s1",
         "s2"
@@ -489,6 +535,7 @@
       "fecha_inicio": "2004-11-25",
       "fecha_fin": "2004-12-03",
       "resumen_anual": "Homenaje al cine clásico revisitado.",
+      "color": "#D4E157",
       "secciones": [
         "s1",
         "s2"

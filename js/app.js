@@ -22,9 +22,16 @@ async function init() {
     try {
         const response = await fetch('data/data.json');
         festivalData = await response.json();
-        
+
         setupEventListeners();
-        renderView('dashboard');
+
+        // La web comienza mostrando el listado de ediciones
+        currentView = 'ediciones';
+        navLinks.forEach(l => {
+            l.classList.remove('active');
+            if (l.dataset.view === 'ediciones') l.classList.add('active');
+        });
+        renderView('ediciones');
     } catch (error) {
         console.error('Error loading data:', error);
         contentDisplay.innerHTML = '<p>Error al cargar los datos del festival. Asegúrate de que data/data.json existe.</p>';
@@ -62,8 +69,8 @@ function setupEventListeners() {
     themeToggle.addEventListener('click', () => {
         document.body.classList.toggle('light-theme');
         const isLight = document.body.classList.contains('light-theme');
-        themeToggle.innerHTML = isLight 
-            ? '<i class="fas fa-moon"></i> Modo Oscuro' 
+        themeToggle.innerHTML = isLight
+            ? '<i class="fas fa-moon"></i> Modo Oscuro'
             : '<i class="fas fa-sun"></i> Modo Claro';
         localStorage.setItem('theme', isLight ? 'light' : 'dark');
     });
@@ -107,6 +114,27 @@ function renderView(view) {
         dataMap[view]();
     } else {
         renderDashboard();
+    }
+}
+
+// Helper to render content based on current mode
+function renderModeContent(type, items) {
+    if (currentMode === 'table') {
+        renderTableView(type, items);
+    } else if (currentMode === 'gallery') {
+        renderGalleryView(type, items);
+    } else if (currentMode === 'list') {
+        renderListView(type, items);
+    } else if (currentMode === 'kanban') {
+        renderKanbanView(type, items);
+    } else if (currentMode === 'calendar') {
+        renderCalendarView(type, items);
+    } else if (currentMode === 'map') {
+        renderMapView(type, items);
+    } else if (currentMode === 'dashboard') {
+        renderSectionDashboard(type, items);
+    } else {
+        renderGridView(type, items);
     }
 }
 
@@ -187,7 +215,7 @@ function renderContactoView() {
         if (typeof L !== 'undefined') {
             const map = L.map('contact-map', { zoomControl: false }).setView([43.5414, -5.6615], 16);
             const isLight = document.body.classList.contains('light-theme');
-            const tileUrl = isLight 
+            const tileUrl = isLight
                 ? 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png'
                 : 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
             L.tileLayer(tileUrl).addTo(map);
@@ -223,20 +251,230 @@ function renderSectionView(type, items) {
         </div>
     `;
 
-    if (currentMode === 'table') {
-        renderTableView(type, items);
-    } else if (currentMode === 'gallery') {
-        renderGalleryView(type, items);
-    } else if (currentMode === 'list') {
-        renderListView(type, items);
-    } else if (currentMode === 'kanban') {
-        renderKanbanView(type, items);
-    } else if (currentMode === 'calendar') {
-        renderCalendarView(type, items);
-    } else if (currentMode === 'map') {
-        renderMapView(type, items);
+    renderModeContent(type, items);
+}
+
+// Section Dashboard (Interactive Data)
+function renderSectionDashboard(type, items) {
+    const dash = document.createElement('div');
+    dash.className = 'section-dashboard fade-in';
+
+    let statsHtml = '';
+    let chartHtml = '';
+
+    if (type === 'peliculas') {
+        const byCountry = {};
+        items.forEach(p => byCountry[p.pais] = (byCountry[p.pais] || 0) + 1);
+        const topCountries = Object.entries(byCountry).sort((a, b) => b[1] - a[1]).slice(0, 5);
+
+        statsHtml = `
+            <div class="interactive-data-row">
+                <div class="data-bubble"><span class="label">Total Películas</span><span class="count">${items.length}</span></div>
+                <div class="data-bubble"><span class="label">Países</span><span class="count">${Object.keys(byCountry).length}</span></div>
+                <div class="data-bubble"><span class="label">Media Duración</span><span class="count">~95 min</span></div>
+                <div class="data-bubble"><span class="label">Galardonadas</span><span class="count">${items.filter(p => p.galardones.length > 0).length}</span></div>
+            </div>
+        `;
+        chartHtml = `
+            <div class="dashboard-section-grid" style="margin-top: 3rem;">
+                <div class="chart-container"><h3>Distribución por Países (Top 5)</h3><canvas id="sectionChart"></canvas></div>
+                <div class="chart-container"><h3>Películas por Sección</h3><canvas id="sectionChart2"></canvas></div>
+            </div>
+        `;
+    } else if (type === 'ediciones') {
+        const totalAsistentes = items.reduce((acc, ed) => acc + (ed.estadisticas.asistentes || 0), 0);
+        statsHtml = `
+            <div class="interactive-data-row">
+                <div class="data-bubble"><span class="label">Total Ediciones</span><span class="count">${items.length}</span></div>
+                <div class="data-bubble"><span class="label">Total Espectadores</span><span class="count">${(totalAsistentes / 1000000).toFixed(1)}M</span></div>
+                <div class="data-bubble"><span class="label">Media Pelis/Edición</span><span class="count">${Math.round(items.reduce((acc, e) => acc + e.estadisticas.peliculas, 0) / items.length)}</span></div>
+                <div class="data-bubble"><span class="label">Años de Historia</span><span class="count">${new Date().getFullYear() - items[items.length - 1].año}</span></div>
+            </div>
+        `;
+        chartHtml = `
+            <div class="dashboard-section-grid" style="margin-top: 3rem;">
+                <div class="chart-container dashboard-card-full"><h3>Evolución de Espectadores</h3><canvas id="sectionChart"></canvas></div>
+            </div>
+        `;
+    } else if (type === 'cineastas') {
+        const roles = {};
+        items.forEach(c => c.cargos.forEach(role => roles[role] = (roles[role] || 0) + 1));
+        statsHtml = `
+            <div class="interactive-data-row">
+                <div class="data-bubble"><span class="label">Total Cineastas</span><span class="count">${items.length}</span></div>
+                <div class="data-bubble"><span class="label">Directores</span><span class="count">${roles['Director'] || 0}</span></div>
+                <div class="data-bubble"><span class="label">Actores/Actrices</span><span class="count">${roles['Actor'] || roles['Actriz'] || 0}</span></div>
+                <div class="data-bubble"><span class="label">Países de Origen</span><span class="count">${new Set(items.map(c => c.pais)).size}</span></div>
+            </div>
+        `;
+        chartHtml = `
+            <div class="dashboard-section-grid" style="margin-top: 3rem;">
+                <div class="chart-container"><h3>Roles en el Festival</h3><canvas id="sectionChart"></canvas></div>
+                <div class="chart-container"><h3>Top Países de Origen</h3><canvas id="sectionChart2"></canvas></div>
+            </div>
+        `;
+    } else if (type === 'secciones') {
+        statsHtml = `
+            <div class="interactive-data-row">
+                <div class="data-bubble"><span class="label">Total Secciones</span><span class="count">${items.length}</span></div>
+                <div class="data-bubble"><span class="label">Pelis/Sección</span><span class="count">~${Math.round(festivalData.peliculas.length / items.length)}</span></div>
+                <div class="data-bubble"><span class="label">Sección Top</span><span class="count">Albar</span></div>
+            </div>
+        `;
+        chartHtml = `
+            <div class="dashboard-section-grid" style="margin-top: 3rem;">
+                <div class="chart-container"><h3>Películas por Sección (Total)</h3><canvas id="sectionChart"></canvas></div>
+                <div class="chart-container"><h3>Evolución Festival-Sección</h3><canvas id="sectionChart2"></canvas></div>
+            </div>
+        `;
     } else {
-        renderGridView(type, items);
+        statsHtml = `
+            <div class="interactive-data-row">
+                <div class="data-bubble"><span class="label">Elementos</span><span class="count">${items.length}</span></div>
+                <div class="data-bubble"><span class="label">Análisis de Datos</span><span class="count">LIVE</span></div>
+            </div>
+            <div style="padding: 4rem; text-align: center; background: var(--bg-card); border-radius: 20px; margin-top: 2rem;">
+                <h3>Dashboard en construcción para esta sección</h3>
+                <p style="color: var(--text-secondary)">Estamos procesando los datos históricos para ofrecerte las mejores estadísticas.</p>
+            </div>
+        `;
+    }
+
+    dash.innerHTML = statsHtml + chartHtml;
+    contentDisplay.appendChild(dash);
+
+    // Init charts if needed
+    if (chartHtml) {
+        setTimeout(() => initSectionCharts(type, items), 100);
+    }
+}
+
+function initSectionCharts(type, items) {
+    if (type === 'peliculas') {
+        const byCountry = {};
+        items.forEach(p => byCountry[p.pais] = (byCountry[p.pais] || 0) + 1);
+        const topCountries = Object.entries(byCountry).sort((a, b) => b[1] - a[1]).slice(0, 5);
+
+        new Chart(document.getElementById('sectionChart'), {
+            type: 'bar',
+            data: {
+                labels: topCountries.map(c => c[0]),
+                datasets: [{
+                    label: 'Películas',
+                    data: topCountries.map(c => c[1]),
+                    backgroundColor: 'rgba(250, 204, 21, 0.6)',
+                    borderColor: '#facc15',
+                    borderWidth: 1
+                }]
+            },
+            options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { color: '#94a3b8' } }, x: { ticks: { color: '#94a3b8' } } } }
+        });
+
+        const bySection = {};
+        items.forEach(p => bySection[p.seccion] = (bySection[p.seccion] || 0) + 1);
+        new Chart(document.getElementById('sectionChart2'), {
+            type: 'pie',
+            data: {
+                labels: Object.keys(bySection),
+                datasets: [{
+                    data: Object.values(bySection),
+                    backgroundColor: ['#facc15', '#38bdf8', '#fb7185', '#a78bfa', '#4ade80']
+                }]
+            },
+            options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8' } } } }
+        });
+    } else if (type === 'ediciones') {
+        new Chart(document.getElementById('sectionChart'), {
+            type: 'line',
+            data: {
+                labels: items.map(e => e.año).reverse(),
+                datasets: [{
+                    label: 'Espectadores',
+                    data: items.map(e => e.estadisticas.asistentes).reverse(),
+                    borderColor: '#facc15',
+                    tension: 0.4,
+                    fill: true,
+                    backgroundColor: 'rgba(250, 204, 21, 0.1)'
+                }]
+            },
+            options: { responsive: true, scales: { y: { ticks: { color: '#94a3b8' } }, x: { ticks: { color: '#94a3b8' } } } }
+        });
+    } else if (type === 'cineastas') {
+        const roles = {};
+        items.forEach(c => c.cargos.forEach(role => roles[role] = (roles[role] || 0) + 1));
+
+        new Chart(document.getElementById('sectionChart'), {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(roles),
+                datasets: [{
+                    data: Object.values(roles),
+                    backgroundColor: ['#facc15', '#38bdf8', '#fb7185', '#a78bfa']
+                }]
+            },
+            options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8' } } } }
+        });
+
+        const countries = {};
+        items.forEach(c => countries[c.pais] = (countries[c.pais] || 0) + 1);
+        const topC = Object.entries(countries).sort((a, b) => b[1] - a[1]).slice(0, 5);
+        new Chart(document.getElementById('sectionChart2'), {
+            type: 'bar',
+            data: {
+                labels: topC.map(c => c[0]),
+                datasets: [{
+                    label: 'Cineastas',
+                    data: topC.map(c => c[1]),
+                    backgroundColor: '#38bdf8'
+                }]
+            },
+            options: { responsive: true, indexAxis: 'y', plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } } }
+        });
+    } else if (type === 'secciones') {
+        // Count movies per section
+        const sectionCounts = {};
+        festivalData.peliculas.forEach(p => sectionCounts[p.seccion] = (sectionCounts[p.seccion] || 0) + 1);
+
+        new Chart(document.getElementById('sectionChart'), {
+            type: 'bar',
+            data: {
+                labels: Object.keys(sectionCounts),
+                datasets: [{
+                    label: 'Películas',
+                    data: Object.values(sectionCounts),
+                    backgroundColor: 'rgba(56, 189, 248, 0.6)',
+                    borderColor: '#38bdf8',
+                    borderWidth: 1
+                }]
+            },
+            options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { ticks: { color: '#94a3b8' } }, x: { ticks: { color: '#94a3b8' } } } }
+        });
+
+        // Festival-Sección Evolution (Stacked bar)
+        const editions = festivalData.ediciones.slice(0, 5).reverse(); // Last 5
+        const labels = editions.map(e => e.numero + 'ª');
+        const sections = [...new Set(festivalData.peliculas.map(p => p.seccion))];
+
+        const datasets = sections.map((sec, i) => {
+            return {
+                label: sec,
+                data: editions.map(e => festivalData.peliculas.filter(p => p.edicion_id === e.id && p.seccion === sec).length),
+                backgroundColor: ['#facc15', '#38bdf8', '#fb7185', '#a78bfa', '#4ade80'][i % 5]
+            };
+        });
+
+        new Chart(document.getElementById('sectionChart2'), {
+            type: 'bar',
+            data: { labels, datasets },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { stacked: true, ticks: { color: '#94a3b8' } },
+                    y: { stacked: true, ticks: { color: '#94a3b8' } }
+                },
+                plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8', boxWidth: 12 } } }
+            }
+        });
     }
 }
 
@@ -244,7 +482,7 @@ function renderSectionView(type, items) {
 function renderGridView(type, items) {
     const grid = document.createElement('div');
     grid.className = 'items-grid';
-    
+
     items.forEach(item => {
         const card = document.createElement('div');
         card.className = 'item-card';
@@ -254,11 +492,11 @@ function renderGridView(type, items) {
 
         card.innerHTML = `
             <img src="${img}" alt="${title}">
-            <div class="item-info">
+            <div class="item-info" style="${item.color ? `border-left: 4px solid ${item.color};` : ''}">
                 <h4>${title}</h4>
                 <p>${subtitle}${item.ciudad ? ` (${item.ciudad})` : ''}</p>
                 ${item.cargos ? `<p class="accent-text" style="font-size: 0.8rem; color: var(--accent); margin-top: 4px;">${item.cargos.join(' • ')}</p>` : ''}
-                ${item.año ? `<p>Año ${item.año}</p>` : ''}
+                ${item.año ? `<p style="color: ${item.color || 'var(--accent)'}; font-weight: 600;">Año ${item.año}</p>` : ''}
             </div>
         `;
         card.onclick = () => {
@@ -277,13 +515,13 @@ function renderGridView(type, items) {
 function renderGalleryView(type, items) {
     const gallery = document.createElement('div');
     gallery.className = 'items-gallery';
-    
+
     items.forEach(item => {
         const card = document.createElement('div');
         card.className = 'gallery-card';
         const img = item.cartel || item.foto || `https://picsum.photos/seed/${item.id}/400/600`;
         const title = item.titulo || item.nombre || `${item.numero}ª Edición`;
-        
+
         card.innerHTML = `
             <div class="gallery-img">
                 <img src="${img}" alt="${title}">
@@ -307,7 +545,7 @@ function renderGalleryView(type, items) {
 function renderListView(type, items) {
     const list = document.createElement('div');
     list.className = 'items-list';
-    
+
     items.forEach(item => {
         const row = document.createElement('div');
         row.className = 'item-list-row';
@@ -338,13 +576,13 @@ function renderListView(type, items) {
 function renderTableView(type, items) {
     const table = document.createElement('table');
     table.className = 'data-table';
-    
+
     let columns = [];
-    if (type === 'peliculas') columns = [{label:'Título', key:'titulo'}, {label:'Director', key:'director'}, {label:'País', key:'pais'}, {label:'Sección', key:'seccion'}];
-    else if (type === 'ediciones') columns = [{label:'Nº', key:'numero'}, {label:'Año', key:'año'}, {label:'Director', key:'director'}, {label:'Pelis', key:'estadisticas.peliculas'}];
-    else if (type === 'cineastas') columns = [{label:'Nombre', key:'nombre'}, {label:'País', key:'pais'}, {label:'Películas', key:'peliculas.length'}];
-    else if (type === 'secciones') columns = [{label:'Nombre', key:'nombre'}, {label:'Años Activa', key:'años_activa'}];
-    else columns = [{label:'Nombre', key:'nombre'}, {label:'Información', key:'fecha'}];
+    if (type === 'peliculas') columns = [{ label: 'Título', key: 'titulo' }, { label: 'Director', key: 'director' }, { label: 'País', key: 'pais' }, { label: 'Sección', key: 'seccion' }];
+    else if (type === 'ediciones') columns = [{ label: 'Nº', key: 'numero' }, { label: 'Año', key: 'año' }, { label: 'Director', key: 'director' }, { label: 'Pelis', key: 'estadisticas.peliculas' }];
+    else if (type === 'cineastas') columns = [{ label: 'Nombre', key: 'nombre' }, { label: 'País', key: 'pais' }, { label: 'Películas', key: 'peliculas.length' }];
+    else if (type === 'secciones') columns = [{ label: 'Nombre', key: 'nombre' }, { label: 'Años Activa', key: 'años_activa' }];
+    else columns = [{ label: 'Nombre', key: 'nombre' }, { label: 'Información', key: 'fecha' }];
 
     // Sorting logic
     if (sortConfig.key) {
@@ -371,8 +609,8 @@ function renderTableView(type, items) {
         </thead>
         <tbody>
             ${items.map(item => {
-                const img = item.cartel || item.foto || `https://picsum.photos/seed/${item.id}/50/50`;
-                return `
+        const img = item.cartel || item.foto || `https://picsum.photos/seed/${item.id}/50/50`;
+        return `
                 <tr>
                     <td><img src="${img}" style="width: 40px; height: 40px; object-fit: cover; border-radius: 4px;"></td>
                     ${type === 'peliculas' ? `<td>${item.titulo}</td><td>${item.director}</td><td>${item.pais}</td><td>${item.seccion}</td>` : ''}
@@ -396,7 +634,7 @@ function getNestedValue(obj, path) {
 function renderCalendarView(type, items) {
     const calendar = document.createElement('div');
     calendar.className = 'items-calendar';
-    
+
     // Filter and sort by date
     const datedItems = items.filter(i => i.fecha || i.fecha_inicio).sort((a, b) => {
         const dateA = new Date(a.fecha || a.fecha_inicio);
@@ -412,7 +650,7 @@ function renderCalendarView(type, items) {
             const day = date.getDate();
             const month = date.toLocaleString('es-ES', { month: 'short' }).toUpperCase();
             const title = item.titulo || item.nombre || `${item.numero}ª Edición`;
-            
+
             const card = document.createElement('div');
             card.className = 'calendar-row';
             card.innerHTML = `
@@ -436,12 +674,12 @@ function renderCalendarView(type, items) {
 function renderKanbanView(type, items) {
     const kanban = document.createElement('div');
     kanban.className = 'kanban-board';
-    
+
     let groups = {};
 
     if (type === 'peliculas') {
         festivalData.secciones.forEach(s => groups[s.nombre] = []);
-        items.forEach(p => { if(groups[p.seccion]) groups[p.seccion].push(p); });
+        items.forEach(p => { if (groups[p.seccion]) groups[p.seccion].push(p); });
     } else if (type === 'ediciones') {
         items.forEach(e => {
             const decade = Math.floor(e.año / 10) * 10 + 's';
@@ -469,7 +707,7 @@ function renderKanbanView(type, items) {
         const column = document.createElement('div');
         column.className = 'kanban-column glass';
         column.innerHTML = `<h3>${key} (${groups[key].length})</h3>`;
-        
+
         groups[key].forEach(item => {
             const card = document.createElement('div');
             card.className = 'kanban-card';
@@ -498,14 +736,14 @@ function renderMapView(type, items) {
     contentDisplay.appendChild(mapDiv);
 
     if (type === 'sedes') {
-        initLeafletMap(items.map(s => ({ 
-            lat: s.coordenadas[0], lon: s.coordenadas[1], label: s.nombre, desc: s.direccion, 
-            type: 'sedes', id: s.id, img: `https://picsum.photos/seed/${s.id}/400/300` 
+        initLeafletMap(items.map(s => ({
+            lat: s.coordenadas[0], lon: s.coordenadas[1], label: s.nombre, desc: s.direccion,
+            type: 'sedes', id: s.id, img: `https://picsum.photos/seed/${s.id}/400/300`
         })));
     } else if (type === 'eventos') {
-        initLeafletMap(items.map(ev => ({ 
-            lat: ev.coordenadas[0], lon: ev.coordenadas[1], label: ev.nombre, desc: `${ev.fecha} - ${ev.lugar}`, 
-            type: 'eventos', id: ev.id, img: `https://picsum.photos/seed/${ev.id}/400/300` 
+        initLeafletMap(items.map(ev => ({
+            lat: ev.coordenadas[0], lon: ev.coordenadas[1], label: ev.nombre, desc: `${ev.fecha} - ${ev.lugar}`,
+            type: 'eventos', id: ev.id, img: `https://picsum.photos/seed/${ev.id}/400/300`
         })));
     } else if (type === 'cineastas') {
         const markers = items.filter(c => c.coordenadas).map(c => ({
@@ -569,7 +807,7 @@ function initLeafletMap(markers, zoomToGijon = false) {
             `;
             L.marker([m.lat, m.lon]).addTo(map).bindPopup(popupContent);
         });
-        
+
         if (markers.length > 0 && !zoomToGijon) {
             const group = new L.featureGroup(markers.map(m => L.marker([m.lat, m.lon])));
             map.fitBounds(group.getBounds().pad(0.5));
@@ -669,14 +907,16 @@ function showEdicionDetail(item) {
     const { prev, next } = findPrevNext('ediciones', item.id);
     const relatedMovies = festivalData.peliculas.filter(p => p.edicion_id === item.id);
     const sectionsInEdition = [...new Set(relatedMovies.map(p => p.seccion))];
-    
+
+    const themeColor = item.color || 'var(--accent)';
+
     modalBody.innerHTML = `
-        <div class="edition-detail fade-in">
+        <div class="edition-detail fade-in" style="--edition-theme: ${themeColor}">
             <div class="edition-poster-container">
                 <img src="${item.cartel}" alt="${item.numero}">
                 <div class="edition-actions">
-                    <a href="${item.web}" target="_blank" class="btn-primary"><i class="fas fa-external-link-alt"></i> Web Oficial</a>
-                    <a href="${item.programa}" target="_blank" class="btn-secondary"><i class="fas fa-file-pdf"></i> Programa</a>
+                    <a href="${item.web}" target="_blank" class="btn-primary" style="background: var(--edition-theme); color: #000;"><i class="fas fa-external-link-alt"></i> Web Oficial</a>
+                    <a href="${item.programa}" target="_blank" class="btn-secondary" style="border-color: var(--edition-theme); color: var(--edition-theme);"><i class="fas fa-file-pdf"></i> Programa</a>
                 </div>
             </div>
             <div class="edition-header-info">
@@ -685,7 +925,7 @@ function showEdicionDetail(item) {
                     ${next ? `<button onclick="app.showDetailById('ediciones', '${next.id}')">${next.numero}ª Edición <i class="fas fa-chevron-right"></i></button>` : '<span></span>'}
                 </div>
                 <h1>${item.numero}ª Edición</h1>
-                <div class="year-tag">${item.año}</div>
+                <div class="year-tag" style="color: var(--edition-theme);">${item.año}</div>
                 
                 <div class="edition-summary-box">
                     <h3>Resumen del Año</h3>
@@ -747,7 +987,7 @@ function formatDate(dateStr) {
 
 function showPeliculaDetail(p) {
     const { prev, next } = findPrevNext('peliculas', p.id);
-    
+
     // Look for director profile
     const director = festivalData.cineastas.find(c => c.nombre === p.director);
     const directorHtml = director ? `
@@ -760,6 +1000,23 @@ function showPeliculaDetail(p) {
             </div>
         </div>
     ` : `<p><strong>Director:</strong> ${p.director}</p>`;
+
+    const editions = Array.isArray(p.edicion_id) ? p.edicion_id : [p.edicion_id];
+    const sections = Array.isArray(p.seccion) ? p.seccion : [p.seccion];
+
+    const editionsHtml = editions.map(id => {
+        const ed = festivalData.ediciones.find(e => e.id === id);
+        if (!ed) return '';
+        return `<span class="detail-link-pill" onclick="modal.style.display='none'; app.showDetailById('ediciones', '${ed.id}')">
+            <i class="fas fa-history"></i> ${ed.numero}ª Edición (${ed.año})
+        </span>`;
+    }).join('');
+
+    const sectionsHtml = sections.map(sec => {
+        return `<span class="detail-link-pill" onclick="modal.style.display='none'; app.showMoviesBySection('${sec}')">
+            <i class="fas fa-layer-group"></i> ${sec}
+        </span>`;
+    }).join('');
 
     modalBody.innerHTML = `
         <div class="modal-nav">
@@ -776,6 +1033,12 @@ function showPeliculaDetail(p) {
                             <i class="fa${app.isFavorite('peliculas', p.id) ? 's' : 'r'} fa-heart"></i>
                         </button>
                     </div>
+                    
+                    <div class="detail-pills-row" style="margin: 1rem 0;">
+                        ${editionsHtml}
+                        ${sectionsHtml}
+                    </div>
+
                     <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 1.5rem;">${p.pais} | ${p.duracion}</p>
                     
                     ${directorHtml}
@@ -793,11 +1056,11 @@ function showPeliculaDetail(p) {
 
 function showCineastaDetail(c) {
     const { prev, next } = findPrevNext('cineastas', c.id);
-    
+
     // Find related films
     const relatedFilms = festivalData.peliculas.filter(p => c.peliculas.includes(p.id));
-    
-    const filmsHtml = relatedFilms.length > 0 
+
+    const filmsHtml = relatedFilms.length > 0
         ? `
             <div style="margin-top: 2rem;">
                 <h3 style="margin-bottom: 1rem;">Filmografía en el Festival</h3>
@@ -884,7 +1147,7 @@ function handleSearch(query) {
 window.app = {
     favorites: JSON.parse(localStorage.getItem('ficx_favorites')) || { peliculas: [], cineastas: [] },
 
-    toggleFavorite: function(type, id) {
+    toggleFavorite: function (type, id) {
         if (!this.favorites[type]) this.favorites[type] = [];
         const index = this.favorites[type].indexOf(id);
         if (index === -1) {
@@ -893,18 +1156,18 @@ window.app = {
             this.favorites[type].splice(index, 1);
         }
         localStorage.setItem('ficx_favorites', JSON.stringify(this.favorites));
-        
+
         const item = festivalData[type].find(i => i.id === id);
         if (item) showDetail(type, item);
-        
+
         if (currentView === 'favoritos') renderView('favoritos');
     },
 
-    isFavorite: function(type, id) {
+    isFavorite: function (type, id) {
         return this.favorites[type] && this.favorites[type].includes(id);
     },
 
-    showDetailById: function(type, id) {
+    showDetailById: function (type, id) {
         const item = festivalData[type].find(i => i.id === id);
         if (item) showDetail(type, item);
     },
@@ -915,13 +1178,13 @@ window.app = {
             l.classList.remove('active');
             if (l.dataset.view === 'peliculas') l.classList.add('active');
         });
-        
+
         renderView('peliculas');
         // Filter movies after rendering view
         const filteredPelis = festivalData.peliculas.filter(p => p.seccion === sectionName);
         contentDisplay.innerHTML = `<h1 class="view-title">Películas en sección: ${sectionName}</h1>`;
         renderGridView('peliculas', filteredPelis);
-        
+
         // Add a back button
         const backBtn = document.createElement('button');
         backBtn.className = 'btn-text';
@@ -959,15 +1222,18 @@ window.app = {
         filters.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
         btn.classList.add('active');
 
-        const filtered = category === 'Todos' 
-            ? festivalData.cineastas 
+        const filtered = category === 'Todos'
+            ? festivalData.cineastas
             : festivalData.cineastas.filter(c => c.cargos.includes(category));
-        
-        // Find existing grid or create one
-        let grid = contentDisplay.querySelector('.items-grid');
-        if (grid) grid.remove();
-        renderGridView('cineastas', filtered);
-    }
+
+        // Remove everything except the header
+        const header = contentDisplay.querySelector('.view-header-flex');
+        while (header.nextSibling) {
+            contentDisplay.removeChild(header.nextSibling);
+        }
+
+        renderModeContent('cineastas', filtered);
+    },
 };
 
 
@@ -1029,10 +1295,10 @@ function showSedeDetail(item) {
         if (typeof L !== 'undefined' && item.coordenadas) {
             const detailMap = L.map('sede-detail-map', { zoomControl: false }).setView(item.coordenadas, 16);
             const isLight = document.body.classList.contains('light-theme');
-            const tileUrl = isLight 
+            const tileUrl = isLight
                 ? 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png'
                 : 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
-            
+
             L.tileLayer(tileUrl).addTo(detailMap);
             L.marker(item.coordenadas).addTo(detailMap)
                 .bindPopup(`<strong>${item.nombre}</strong>`)
@@ -1098,7 +1364,7 @@ function showGalardonDetail(item) {
 function renderFavoritosView() {
     const favPelis = festivalData.peliculas.filter(p => app.isFavorite('peliculas', p.id));
     const favCineastas = festivalData.cineastas.filter(c => app.isFavorite('cineastas', c.id));
-    
+
     contentDisplay.innerHTML = `
         <div class="favoritos-page fade-in">
             <div class="fav-hero glass">

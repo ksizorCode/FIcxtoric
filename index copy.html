@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body class="dark-mode">
     <div class="app-container">
         <!-- Sidebar -->
@@ -44,20 +42,14 @@
                     <input type="text" id="global-search" placeholder="Buscar películas, cineastas, ediciones...">
                 </div>
                 <div class="view-controls">
-                    <button class="view-btn active" data-mode="grid" title="Vista Grid"><i
-                            class="fas fa-th"></i></button>
-                    <button class="view-btn" data-mode="gallery" title="Vista Galería"><i
-                            class="fas fa-th-list"></i></button>
+                    <button class="view-btn active" data-mode="grid" title="Vista Grid"><i class="fas fa-th"></i></button>
+                    <button class="view-btn" data-mode="gallery" title="Vista Galería"><i class="fas fa-th-list"></i></button>
                     <button class="view-btn" data-mode="list" title="Vista Lista"><i class="fas fa-list"></i></button>
                     <button class="view-btn" data-mode="table" title="Vista Tabla"><i class="fas fa-table"></i></button>
-                    <button class="view-btn" data-mode="kanban" title="Vista Kanban"><i
-                            class="fas fa-columns"></i></button>
-                    <button class="view-btn" data-mode="calendar" title="Vista Calendario"><i
-                            class="fas fa-calendar-alt"></i></button>
-                    <button class="view-btn" data-mode="map" title="Vista Mapa"><i
-                            class="fas fa-map-marked-alt"></i></button>
-                    <button class="view-btn" data-mode="dashboard" title="Vista Dashboard"><i
-                            class="fas fa-chart-pie"></i></button>
+                    <button class="view-btn" data-mode="kanban" title="Vista Kanban"><i class="fas fa-columns"></i></button>
+                    <button class="view-btn" data-mode="calendar" title="Vista Calendario"><i class="fas fa-calendar-alt"></i></button>
+                    <button class="view-btn" data-mode="map" title="Vista Mapa"><i class="fas fa-map-marked-alt"></i></button>
+                    <button class="view-btn" data-mode="dashboard" title="Vista Dashboard"><i class="fas fa-chart-pie"></i></button>
                 </div>
             </header>
 
@@ -77,7 +69,7 @@
 
     <!-- Modal for Details -->
     <div id="detail-modal" class="modal">
-        <div class="modal-content glass" style="border: solid var(--edition-theme) 5px;">
+        <div class="modal-content glass">
             <span class="close-modal">&times;</span>
             <div id="modal-body"></div>
         </div>
@@ -87,5 +79,4 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/app.js"></script>
 </body>
-
 </html>
